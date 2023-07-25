@@ -18,6 +18,10 @@
 <style lang="scss">
     nav {
         display: flex;
+        justify-content: space-between;
+        margin: 0 4rem;
+        margin-top: 1.5rem;
+        align-items: center;
 
         a {
             color: inherit;
