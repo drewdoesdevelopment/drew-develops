@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-    <a href="/">Drew Develops</a>
+    <a class='logo' href="/">Drew Develops</a>
 
     <ul>
         <li><a href="/">Home</a></li>
@@ -30,6 +30,20 @@
             &:visited {
                 color: inherit;
             }
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .logo::after {
+            content: "";
+            width: 105px;
+            top: 70px;
+            left: 64px;
+            position: absolute;
+            border-bottom: 2px solid black;
         }
     }
 
