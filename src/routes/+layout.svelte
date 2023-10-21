@@ -7,7 +7,7 @@
     <a class='logo' href="/">Drew Develops</a>
 
     <ul>
-        <li><a href="/" class="hvr-underline-from-center">Home</a></li>
+        <li><a href="/"class="hvr-underline-from-center">Home</a></li>
         <li><a href="/expertise" class="hvr-underline-from-center">Expertise</a></li>
         <li><a href="/previous-work" class="hvr-underline-from-center">Previous Work</a></li>
         <li><a href="/connect" class="hvr-underline-from-center">Connect</a></li>
@@ -38,22 +38,30 @@
             font-size: 1.2rem;
         }
 
-    }
-    ul {
+        ul {
         display: flex;
 
         li {
             list-style: none;
-            margin-right: 1.3rem;
+            margin-right: 0.3em;
 
             a {
-                padding-bottom: 4px;
+                padding: 5px;
+                font-weight: 400;
+                font-size: 1rem;
 
                 &::before {
-                    background-color: grey !important;
+                    background-color: rgb(85, 85, 85) !important;
                     height: 2px !important;
+                    border-radius: 5px;
+                }
+
+                &:hover {
+                    font-weight: 500;
                 }
             }
         }
     }
+}
+    
 </style>
