@@ -1,5 +1,12 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+	import { page } from '$app/stores';
+
+    // TODO: Replace with the OS preference color scheme and grab from cookie 
+	let userTheme = 'dark';
+
+	function onThemeButtonClick() {
+		userTheme === 'dark' ? (userTheme = 'light') : (userTheme = 'dark');
+	}
 
 	const navLinks = [
 		{ label: 'Home', href: '/' },
@@ -8,40 +15,54 @@
 		{ label: 'Connect', href: '/connect' }
 	];
 
-  const icons = {
-    moon: {
-      source: '/images/moon-regular.svg',
-      altText: 'Moon representing a dark theme'
-    }
-  }
+	const icons = {
+		moon: {
+			source: '/images/moon-regular.svg',
+			altText: 'Moon representing a dark theme'
+		},
+		sun: {
+			source: '/images/sun-solid.svg',
+			altText: 'Sun representing a light theme'
+		}
+	};
 
- 	$: isActiveLink = (href: string) => $page.route.id === href;
+	$: isActiveLink = (href: string) => $page.route.id === href;
 </script>
 
 <nav>
 	<a class="logo" href="/">Drew Develops</a>
-  <div class="flex-right">
-    <ul>
-      {#each navLinks as navLink}
-        <li>
-          <a
-            href={navLink.href}
-            class="hvr-underline-from-center"
-            class:active={isActiveLink(navLink.href)}>{navLink.label}</a>
-        </li>
-      {/each}
-      <button class="theme-selector"><img src={icons.moon.source} alt={icons.moon.altText} /></button>
-    </ul>
-  </div>
+	<div class="flex-right">
+		<ul>
+			{#each navLinks as navLink}
+				<li>
+					<a
+						href={navLink.href}
+						class="hvr-underline-from-center"
+						class:active={isActiveLink(navLink.href)}
+						>{navLink.label}
+					</a>
+				</li>
+			{/each}
+		</ul>
+		<button class="theme-selector" on:click={onThemeButtonClick}>
+			<img
+				src={userTheme === 'dark' ? icons.moon.source : icons.sun.source}
+				alt={icons.moon.altText}
+			/>
+		</button>
+	</div>
 </nav>
 
 <style lang="scss">
-  nav {
+	nav {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 4rem;
 		margin-top: 1.5rem;
-		align-items: center; a { color: black;
+		align-items: center;
+
+		a {
+			color: black;
 			text-decoration: none;
 
 			&:active {
@@ -54,20 +75,18 @@
 			font-size: 1.2rem;
 		}
 
-    .theme-selector {
-      cursor: pointer;
-      margin-left: 1rem; 
-      background-color: transparent;
-      border-radius: 100%;
-      border-width: 1px;
-      border-color: transparent;
-      background-color: #fbf6f6;
-      box-shadow: rgb(120 114 213 / 58%) 0px 3px 20px 0px;
+		.theme-selector {
+			cursor: pointer;
+			background-color: transparent;
+			border-color: transparent;
+			margin-left: 0.5rem;
+			height: 28px;
+			border-radius: 50%;
 
-      img {
-        height: 18px;
-      }
-    }
+			img {
+				height: 18px;
+			}
+		}
 
 		ul {
 			display: flex;
@@ -75,7 +94,7 @@
 
 			li {
 				list-style: none;
-				margin-right: 0.3em;
+				margin-right: 0.5em;
 
 				a {
 					padding: 5px;
@@ -83,9 +102,9 @@
 					font-size: 0.9rem;
 					color: #774d4d;
 
-          &.active {
-            font-weight: 600;
-          }
+					&.active {
+						font-weight: 600;
+					}
 
 					&::before {
 						background-color: rgb(85, 85, 85) !important;
@@ -98,6 +117,12 @@
 					}
 				}
 			}
+		}
+
+		.flex-right {
+			display: flex;
+			justify-items: center;
+			align-items: center;
 		}
 	}
 </style>
