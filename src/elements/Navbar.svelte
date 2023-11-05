@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-    // TODO: Replace with the OS preference color scheme and grab from cookie 
+    // TODO: Replace with the OS preference color scheme and set theme cookie 
 	let userTheme = 'dark';
 
 	function onThemeButtonClick() {
@@ -80,8 +80,9 @@
 			background-color: transparent;
 			border-color: transparent;
 			margin-left: 0.5rem;
-			height: 28px;
 			border-radius: 50%;
+			height: 28px;
+            width: 40px;
 
 			img {
 				height: 18px;
