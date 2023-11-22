@@ -18,7 +18,7 @@
 	}
 
 	h1 {
-		font-weight: 600;
+		font-weight: 700;
 		margin-bottom: 0;
 	}
 
