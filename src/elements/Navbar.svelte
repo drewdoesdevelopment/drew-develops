@@ -6,6 +6,7 @@
 
 	function onThemeButtonClick() {
 		userTheme === 'dark' ? (userTheme = 'light') : (userTheme = 'dark');
+        console.log(userTheme);
 	}
 
 	const navLinks = [
