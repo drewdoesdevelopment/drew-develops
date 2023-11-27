@@ -21,7 +21,6 @@
 		padding-left: 0;
         list-style: none;
         display: flex;
-        margin-left: 1rem;
 
         li {
             margin-right: 1rem;
