@@ -1,8 +1,26 @@
+<script lang="ts">
+	import Typed from 'typed.js';
+	import { onMount } from 'svelte';
+
+	let typeWriterElement: HTMLElement;
+
+	onMount(() => {
+		new Typed(typeWriterElement, {
+			strings: ['accessibly compliant apps', 'captivating websites and uis', 'pixel-perfect custom designs from a mockup'],
+			typeSpeed: 50,
+			backSpeed: 40,
+			loop: true
+		});
+	});
+</script>
+
 <main>
 	<div class="hero">
 		<div class="flex-container">
 			<h1>Hey there, I'm Drew</h1>
-			<h2>I'm a software engineer that focuses on creating <span>accessible</span> solutions</h2>
+			<h2>
+				I'm a software engineer that creates <span bind:this={typeWriterElement} />
+			</h2>
 			<button class="primary">See My Work</button>
 			<button class="secondary">Let's Chat</button>
 		</div>
