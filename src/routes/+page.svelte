@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Typed from 'typed.js';
 	import { onMount } from 'svelte';
-
+    
 	let typeWriterElement: HTMLElement;
 
 	onMount(() => {
 		new Typed(typeWriterElement, {
-			strings: ['accessibly compliant apps', 'captivating websites and uis', 'pixel-perfect custom designs from a mockup'],
-			typeSpeed: 50,
-			backSpeed: 40,
+			strings: ['captivating, SEO-focused websites', 'a11y compliant software', 'competitive solutions leveraging AI'],
+			typeSpeed: 40,
+			backSpeed: 32,
 			loop: true
 		});
 	});
@@ -16,8 +16,8 @@
 
 <main>
 	<div class="hero">
-		<div class="flex-container">
-			<h1>Hey there, I'm Drew</h1>
+		<div class="flex-container hero-text">
+			<h1>Hey, I'm Drew</h1>
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
@@ -49,6 +49,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+        &-text {
+            width: 40%;
+        }
 
 		img {
 			height: auto;

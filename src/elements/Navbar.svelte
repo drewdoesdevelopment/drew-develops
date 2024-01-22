@@ -1,13 +1,33 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 
-    // TODO: Replace with the OS preference color scheme and set theme cookie 
-	let userTheme = 'dark';
+	let theme = 'light';
 
-	function onThemeButtonClick() {
-		userTheme === 'dark' ? (userTheme = 'light') : (userTheme = 'dark');
-        console.log(userTheme);
+	function toggleTheme() {
+		theme = theme === 'light' ? 'dark' : 'light';
+		localStorage.setItem('theme', theme);
+		applyTheme();
 	}
+
+	function applyTheme() {
+		document.documentElement.setAttribute('data-theme', theme);
+	}
+
+	function getUserOSColorScheme() {
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			return 'dark';
+		}
+		return 'light';
+	}
+
+	onMount(() => {
+		const storedTheme = localStorage.getItem('theme');
+
+		theme = storedTheme || getUserOSColorScheme();
+		applyTheme();
+        console.log('onmount theme is', theme);
+	});
 
 	const navLinks = [
 		{ label: 'Home', href: '/' },
@@ -45,11 +65,8 @@
 				</li>
 			{/each}
 		</ul>
-		<button class="theme-selector" on:click={onThemeButtonClick}>
-			<img
-				src={userTheme === 'dark' ? icons.moon.source : icons.sun.source}
-				alt={icons.moon.altText}
-			/>
+		<button class="theme-selector" on:click={toggleTheme}>
+			<img src={theme === 'dark' ? icons.moon.source : icons.sun.source} alt={icons.moon.altText} />
 		</button>
 	</div>
 </nav>
@@ -83,7 +100,7 @@
 			margin-left: 0.5rem;
 			border-radius: 50%;
 			height: 28px;
-            width: 40px;
+			width: 40px;
 
 			img {
 				height: 18px;
