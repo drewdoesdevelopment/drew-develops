@@ -99,7 +99,7 @@
 			border-color: transparent;
 			margin-left: 0.5rem;
 			border-radius: 50%;
-			height: 28px;
+			height: 40px;
 			width: 40px;
 
 			img {
