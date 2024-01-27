@@ -1,6 +1,5 @@
 <footer>
     <div class="socials">
-        <h2>Follow me</h2>
         <ul>
             <li><a href="https://github.com/drewdoesdevelopment" target="_blank" rel="noreferrer"><img width="22" src="/images/github.svg" alt="Github brand icon" /></a></li>
             <li><a href="https://github.com/drewdoesdevelopment" target="_blank" rel="noreferrer"><img width="22" src="/images/linkedin-in.svg" alt="Linkedin brand icon" /></a></li>
