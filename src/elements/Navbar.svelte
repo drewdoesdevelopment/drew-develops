@@ -4,31 +4,6 @@
 
 	let theme = 'light';
 
-	function toggleTheme() {
-		theme = theme === 'light' ? 'dark' : 'light';
-		localStorage.setItem('theme', theme);
-		applyTheme();
-	}
-
-	function applyTheme() {
-		document.documentElement.setAttribute('data-theme', theme);
-	}
-
-	function getUserOSColorScheme() {
-		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			return 'dark';
-		}
-		return 'light';
-	}
-
-	onMount(() => {
-		const storedTheme = localStorage.getItem('theme');
-
-		theme = storedTheme || getUserOSColorScheme();
-		applyTheme();
-        console.log('onmount theme is', theme);
-	});
-
 	const navLinks = [
 		{ label: 'Home', href: '/' },
 		{ label: 'Expertise', href: '/expertise' },
@@ -46,6 +21,31 @@
 			altText: 'Sun representing a light theme'
 		}
 	};
+
+	onMount(() => {
+		const storedTheme = localStorage.getItem('theme');
+
+		theme = storedTheme || getUserOSColorScheme();
+		applyTheme();
+	});
+
+
+	function toggleTheme() {
+		theme = theme === 'light' ? 'dark' : 'light';
+		localStorage.setItem('theme', theme);
+		applyTheme();
+	}
+
+	function applyTheme() {
+		document.documentElement.setAttribute('data-theme', theme);
+	}
+
+	function getUserOSColorScheme() {
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			return 'dark';
+		}
+		return 'light';
+	}
 
 	$: isActiveLink = (href: string) => $page.route.id === href;
 </script>
