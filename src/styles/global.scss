@@ -53,14 +53,19 @@
 }
 
 :root {
-    --primary-bg-color: #000000;
-    --secondary-bg-color: #111111;
+    --dark-primary: #1f1d25;
+    --dark-text-color: white;
+}
 
-    --primary-text-color: #000000;
-    --secondary-text-color: #000000;
+html[data-theme="dark"] {
+    body {
+        background-color: var(--dark-primary);
+        color: var(--dark-text-color);
+    }
 
-    --primary-element-color: #000000;
-    --secondary-element-color: #000000;
+    a {
+        color: var(--dark-text-color) !important;
+    }
 }
 
 body {
