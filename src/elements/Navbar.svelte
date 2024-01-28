@@ -13,11 +13,11 @@
 
 	const icons = {
 		moon: {
-			source: '/images/moon-regular.svg',
+			source: '/images/moon-svgrepo-com.svg',
 			altText: 'Moon representing a dark theme'
 		},
 		sun: {
-			source: '/images/sun-solid.svg',
+			source: '/images/sun-svgrepo-com.svg',
 			altText: 'Sun representing a light theme'
 		}
 	};
@@ -99,11 +99,12 @@
 			border-color: transparent;
 			margin-left: 0.5rem;
 			border-radius: 50%;
+            margin-top: 0.2rem;
 			height: 40px;
 			width: 40px;
 
 			img {
-				height: 18px;
+				height: 22px;
 			}
 		}
 

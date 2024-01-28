@@ -6,7 +6,7 @@
         </ul>
     </div>
     <div class="copyright">
-        <p>© Drew Develops 2023</p>
+        <p>© 2024 Drew Develops</p>
     </div>
 </footer>
 
