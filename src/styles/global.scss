@@ -66,6 +66,12 @@ html[data-theme="dark"] {
     a {
         color: var(--dark-text-color) !important;
     }
+
+    .socials {
+        svg {
+            fill: white;
+        }
+    }
 }
 
 body {
