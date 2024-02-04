@@ -37,7 +37,7 @@
 
 	h1 {
 		font-weight: 700;
-		margin-bottom: 0;
+		margin-bottom: -0.3rem;
 	}
 
 	h2 {
