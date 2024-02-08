@@ -54,6 +54,7 @@
 
 :root {
     --dark-primary: #1f1d25;
+    --dark-secondary: #1e252f;
     --dark-text-color: white;
 }
 
@@ -71,6 +72,10 @@ html[data-theme="dark"] {
         svg {
             fill: white;
         }
+    }
+
+    .intro {
+        background-color: var(--dark-secondary) !important;
     }
 }
 

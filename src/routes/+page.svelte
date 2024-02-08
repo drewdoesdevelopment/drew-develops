@@ -34,6 +34,7 @@
 	</div>
 
 	<div class="intro">
+        <img class="intro-pic" alt="Professional headshot of Drew in a tux with a rustic backdrop" src="/images/profile.jpg" />
 		<p>
 			I come from a technical team management background with strong expertise in the Front-End and
 			Web Accessibility. Currently I am working as a software engineer for an awesome
@@ -81,6 +82,24 @@
 			max-width: 100%;
 		}
 	}
+
+    .intro {
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        margin: 3rem 0;
+        font-size: 0.8rem;
+        position: relative;
+
+        &-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: absolute;
+            top: -1.2rem;
+            left: -1rem;
+        }
+    }
 
 	button {
 		margin-top: 0.5rem;
