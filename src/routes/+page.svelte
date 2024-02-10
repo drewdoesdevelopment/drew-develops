@@ -34,22 +34,19 @@
 	</div>
 
 	<div class="intro">
-        <img class="intro-pic" alt="Professional headshot of Drew in a tux with a rustic backdrop" src="/images/profile.jpg" />
-		<p>
-			I come from a technical team management background with strong expertise in the Front-End and
-			Web Accessibility. Currently I am working as a software engineer for an awesome
-			industry-leading LCMS/CCMS directly serving a multitude of Fortune 500 clients. I have
-			advanced knowledge of HTML, CSS, and JavaScript on the frontend and Node, C/C++ on the
-			server-side leveraging performant, trusted relational database technologies (SQL, PostgreSQL).
-			I compliment each language with expertise using modern web libraries while performing as an
-			framework agnostic developer, with previous experience in enterprise level frameworks (React,
-			Angular) and upcoming technology (Svelte, Astro).
-		</p>
-		<p>
-			My passion is creating software that not only looks superb, but also meets the current
-			industry demands of accessibility, SEO, and outperforming the competitor by focusing on
-			developing clean, sustainable, non-bloated applications.
-		</p>
+		<img
+			class="intro-pic"
+			alt="Professional headshot of Drew in a tux with a rustic backdrop"
+			src="/images/profile.jpg"
+		/>
+		<div class="intro-text">
+			<p>
+				My passion lies in creating software that not only looks superb but also meets the current
+				industry standards for accessibility, SEO, and mobile responsiveness. I am dedicated to
+				outpacing competitors by developing sustainable and efficient applications that are free
+				from unnecessary complexity.
+			</p>
+		</div>
 	</div>
 </main>
 
@@ -83,23 +80,23 @@
 		}
 	}
 
-    .intro {
-        background-color: #f6f6f6;
-        padding: 1rem 2rem;
-        border-radius: 10px;
-        margin: 3rem 0;
-        font-size: 0.8rem;
-        position: relative;
+	.intro {
+		background-color: #f6f6f6;
+		padding: 1rem 2rem;
+		border-radius: 10px;
+		margin: 3rem 0;
+		font-size: 0.8rem;
+		position: relative;
 
-        &-pic {
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-            position: absolute;
-            top: -1.2rem;
-            left: -1rem;
-        }
-    }
+		&-pic {
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+			position: absolute;
+			top: -1.2em;
+			left: -1.2rem;
+		}
+	}
 
 	button {
 		margin-top: 0.5rem;
