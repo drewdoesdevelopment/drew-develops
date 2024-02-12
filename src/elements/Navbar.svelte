@@ -11,17 +11,6 @@
 		{ label: 'Connect', href: '/connect' }
 	];
 
-	const icons = {
-		moon: {
-			source: '/images/moon-svgrepo-com.svg',
-			altText: 'Moon representing a dark theme'
-		},
-		sun: {
-			source: '/images/sun-svgrepo-com.svg',
-			altText: 'Sun representing a light theme'
-		}
-	};
-
 	onMount(() => {
 		const storedTheme = localStorage.getItem('theme');
 
@@ -176,6 +165,8 @@
         nav {
             ul li a::before {
                 background-color: white !important;
+                height: 2px !important;
+                border-radius: 5px;
             }
         }
     }
