@@ -83,7 +83,7 @@
 	.intro {
 		background-color: #f6f6f6;
 		padding: 1rem 2rem;
-		border-radius: 10px;
+		border-radius: 5px;
 		margin: 3rem 0;
 		font-size: 0.8rem;
 		position: relative;
