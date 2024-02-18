@@ -25,8 +25,8 @@
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
-			<button class="primary">See My Work</button>
-			<button class="secondary">Let's Chat</button>
+            <a href="/previous-work" class="primary btn">See My Work</a>
+            <a href="/connect" class="secondary btn">Let's Chat</a>
 		</div>
 		<div class="flex-container">
 			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
@@ -63,6 +63,7 @@
 	h2 {
 		font-size: 1.2rem;
 		font-weight: 500;
+        margin-bottom: 1.5rem;
 	}
 
 	.hero {
@@ -82,7 +83,7 @@
 
 	.intro {
 		background-color: #f6f6f6;
-		padding: 1rem 2rem;
+		padding: 1rem 1.5rem;
 		border-radius: 5px;
 		margin: 3rem 0;
 		font-size: 0.8rem;
@@ -98,18 +99,22 @@
 		}
 	}
 
-	button {
-		margin-top: 0.5rem;
-		padding: 10px 26px;
+	.btn {
+		padding: 10px 22px;
 		border-color: transparent;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		font-weight: 500;
 		font-size: 0.8rem;
+        text-decoration: none;
 
 		&:hover {
 			opacity: 0.8;
 			cursor: pointer;
 		}
+
+        &:visited {
+            color: initial;
+        }
 
 		&.primary {
 			background-color: white;
