@@ -170,4 +170,10 @@
             }
         }
     }
+
+    @media(max-width: 380px) {
+        a {
+            color: red !important;
+        }
+    }
 </style>
