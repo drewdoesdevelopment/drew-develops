@@ -18,6 +18,10 @@
 		applyTheme();
 	});
 
+    function toggleNavMenu() {
+        
+    }
+
 	function toggleTheme() {
 		theme = theme === 'light' ? 'dark' : 'light';
 		localStorage.setItem('theme', theme);
@@ -42,7 +46,7 @@
     <div class="flex-left">
         <a class="logo" href="/">Drew Develops</a>
         <div class="buttons">
-            <button class="nav-menu-button">
+            <button class="nav-menu-button" on:click={toggleNavMenu}>
                 {#if theme === 'dark'}
                 <svg
                     width="24px"
@@ -123,7 +127,7 @@
     </div>
 
 	<div class="flex-right">
-		<ul>
+		<ul id="nav-menu">
 			{#each navLinks as navLink}
 				<li>
 					<a
