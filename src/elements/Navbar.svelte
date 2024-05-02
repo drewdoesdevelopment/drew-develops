@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 
 	let theme = 'light';
+    let mobileNavState = false;
 
 	const navLinks = [
 		{ label: 'Home', href: '/' },
@@ -19,7 +20,7 @@
 	});
 
     function toggleNavMenu() {
-        
+        mobileNavState = !mobileNavState;
     }
 
 	function toggleTheme() {
@@ -140,6 +141,19 @@
 			{/each}
 		</ul>
 
+		<ul class="nav-menu-mobile" style='display: { mobileNavState ? 'flex' : 'none' }'>
+			{#each navLinks as navLink}
+				<li>
+					<a
+						href={navLink.href}
+						class="hvr-underline-from-center"
+						class:active={isActiveLink(navLink.href)}
+						>{navLink.label}
+					</a>
+				</li>
+			{/each}
+		</ul>
+
 		<button class="theme-selector" on:click={toggleTheme}>
 			{#if theme === 'dark'}
 				<svg
@@ -191,6 +205,10 @@
 				color: black;
 			}
 		}
+
+        .nav-menu-mobile {
+            display: none;
+        }
 
 		.logo {
 			font-weight: bold;
@@ -264,6 +282,12 @@
 			}
 		}
 	}
+
+    @media (min-width: 699px) {
+        .nav-menu-mobile {
+            display: none !important;
+        }
+    }
 
 	@media (max-width: 698px) {
 		nav {
