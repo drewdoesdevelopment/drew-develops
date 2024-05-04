@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @font-face {
     font-family: 'Poppins';
     src: url('/src/fonts/Poppins-Thin.woff2') format('woff2');
@@ -89,3 +91,9 @@ main {
     margin: 0 4rem;
 }
 
+// Mobile globals
+@media(max-width: $breakpoint-xs) {
+    #nav, #main, #footer {
+        margin: 0;
+    }
+}

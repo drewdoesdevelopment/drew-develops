@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
 	<div class="socials">
 		<ul>
 			<li>

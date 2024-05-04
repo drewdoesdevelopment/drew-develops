@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
-	let theme = 'light';
+	let theme = 'dark';
     let mobileNavState = false;
 
 	const navLinks = [
@@ -43,7 +43,7 @@
 	$: isActiveLink = (href: string) => $page.route.id === href;
 </script>
 
-<nav>
+<nav id="nav">
     <div class="flex-left">
         <a class="logo" href="/">Drew Develops</a>
         <div class="buttons">

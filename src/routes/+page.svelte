@@ -18,7 +18,7 @@
 	});
 </script>
 
-<main>
+<main id="main">
 	<div class="hero">
 		<div class="flex-container hero-text">
 			<h1>Hey, I'm Drew</h1>
