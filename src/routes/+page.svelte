@@ -18,27 +18,22 @@
 	});
 </script>
 
-<main id="main">
+<main>
 	<div class="hero">
 		<div class="flex-container hero-text">
-			<h1>Hey, I'm Drew</h1>
+            <h1>Hey, I'm Drew</h1>
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
             <a href="/previous-work" class="primary btn">See My Work</a>
             <a href="/connect" class="secondary btn">Let's Chat</a>
 		</div>
-		<div class="flex-container">
+		<div class="hero-image flex-container">
 			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
 		</div>
 	</div>
 
 	<div class="intro">
-		<img
-			class="intro-pic"
-			alt="Professional headshot of Drew in a tux with a rustic backdrop"
-			src="/images/profile.jpg"
-		/>
 		<div class="intro-text">
 			<p>
 				My passion lies in creating software that not only looks superb but also meets the current
@@ -51,6 +46,8 @@
 </main>
 
 <style scoped lang="scss">
+    @import '../styles/variables.scss';
+
 	main {
 		margin-top: 3rem;
 	}
@@ -88,15 +85,6 @@
 		margin: 3rem 0;
 		font-size: 0.8rem;
 		position: relative;
-
-		&-pic {
-			width: 40px;
-			height: 40px;
-			border-radius: 100%;
-			position: absolute;
-			top: -1.2em;
-			left: -1.2rem;
-		}
 	}
 
 	.btn {
@@ -128,4 +116,30 @@
 			border-radius: 47px;
 		}
 	}
+
+    @media (max-width: $breakpoint-xs) {
+        main {
+            margin: 0 1rem;
+        }
+
+        .hero {
+            flex-direction: column;
+            align-items: start;
+
+            &-text {
+                width: auto;
+                order: 2;
+
+                span.flex {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                    h1 {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
 </style>

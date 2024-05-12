@@ -94,6 +94,6 @@ main {
 // Mobile globals
 @media(max-width: $breakpoint-xs) {
     #nav, #main, #footer {
-        margin: 0;
+        margin: 0 1rem;
     }
 }
