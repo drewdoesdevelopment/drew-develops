@@ -21,12 +21,20 @@
 <main>
 	<div class="hero">
 		<div class="flex-container hero-text">
-            <h1>Hey, I'm Drew</h1>
+			<h1>Hey, I'm Drew</h1>
+
+			<img
+				class="mobile-image"
+				alt="A man sitting at a computer writing code"
+				src="/images/hero_svg.svg"
+			/>
+
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
-            <a href="/previous-work" class="primary btn">See My Work</a>
-            <a href="/connect" class="secondary btn">Let's Chat</a>
+
+			<a href="/previous-work" class="primary btn">See My Work</a>
+			<a href="/connect" class="secondary btn">Let's Chat</a>
 		</div>
 		<div class="hero-image flex-container">
 			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
@@ -46,7 +54,7 @@
 </main>
 
 <style scoped lang="scss">
-    @import '../styles/variables.scss';
+	@import '../styles/variables.scss';
 
 	main {
 		margin-top: 3rem;
@@ -60,7 +68,7 @@
 	h2 {
 		font-size: 1.2rem;
 		font-weight: 500;
-        margin-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.hero {
@@ -87,22 +95,26 @@
 		position: relative;
 	}
 
+	.mobile-image {
+		display: none;
+	}
+
 	.btn {
 		padding: 10px 22px;
 		border-color: transparent;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		font-weight: 500;
 		font-size: 0.8rem;
-        text-decoration: none;
+		text-decoration: none;
 
 		&:hover {
 			opacity: 0.8;
 			cursor: pointer;
 		}
 
-        &:visited {
-            color: initial;
-        }
+		&:visited {
+			color: initial;
+		}
 
 		&.primary {
 			background-color: white;
@@ -117,29 +129,22 @@
 		}
 	}
 
-    @media (max-width: $breakpoint-xs) {
-        main {
-            margin: 0 1rem;
-        }
+	@media (max-width: $breakpoint-xs) {
+		main {
+			margin: 0 1rem;
+		}
 
-        .hero {
-            flex-direction: column;
-            align-items: start;
+		.hero {
+			flex-direction: column;
+			align-items: start;
 
-            &-text {
-                width: auto;
-                order: 2;
+			&-text {
+				width: auto;
+			}
 
-                span.flex {
-                    display: flex;
-                    align-items: center;
-                    margin-top: 1rem;
-
-                    h1 {
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-    }
+			&-image {
+				display: none;
+			}
+		}
+	}
 </style>
