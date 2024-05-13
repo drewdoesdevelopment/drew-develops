@@ -190,6 +190,8 @@
 </nav>
 
 <style lang="scss">
+    @import '../styles/variables.scss';
+
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -328,5 +330,11 @@
 		.flex-right {
 			align-self: center;
 		}
+
+        @media (max-width: $breakpoint-xs) {
+            nav {
+                padding: 1rem 1rem 0 1rem;
+            }
+        }
 	}
 </style>

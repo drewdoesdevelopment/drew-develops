@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer>
 	<div class="socials">
 		<ul>
 			<li>
@@ -23,6 +23,8 @@
 </footer>
 
 <style lang="scss" scoped>
+    @import '../styles/variables.scss';
+
 	footer {
 		margin: 0 4rem;
 		display: flex;
@@ -59,4 +61,10 @@
 			font-size: 0.8rem;
 		}
 	}
+
+    @media (max-width: $breakpoint-xs) {
+        footer {
+            margin: 2rem 2rem 0 2rem;
+        }
+    }
 </style>

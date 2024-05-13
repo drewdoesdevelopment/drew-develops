@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import Typed from 'typed.js';
 	import { onMount } from 'svelte';
 
@@ -8,8 +9,8 @@
 		new Typed(typeWriterElement, {
 			strings: [
 				'captivating, SEO-focused websites',
-				'a11y compliant software',
-				'competitive solutions leveraging AI'
+				'a11y compliant solutions',
+				'impactful customer experiences'
 			],
 			typeSpeed: 40,
 			backSpeed: 32,
@@ -21,13 +22,13 @@
 <main>
 	<div class="hero">
 		<div class="flex-container hero-text">
-			<h1>Hey, I'm Drew</h1>
+            <h1>Hey, I'm Drew</h1>
 
-			<img
-				class="mobile-image"
-				alt="A man sitting at a computer writing code"
-				src="/images/hero_svg.svg"
-			/>
+            <img
+                class="mobile-image"
+                alt="Drew sitting at a computer writing code"
+                src="/images/hero_svg.svg"
+            />
 
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
@@ -41,16 +42,6 @@
 		</div>
 	</div>
 
-	<div class="intro">
-		<div class="intro-text">
-			<p>
-				My passion lies in creating software that not only looks superb but also meets the current
-				industry standards for accessibility, SEO, and mobile responsiveness. I am dedicated to
-				outpacing competitors by developing sustainable and efficient applications that are free
-				from unnecessary complexity.
-			</p>
-		</div>
-	</div>
 </main>
 
 <style scoped lang="scss">
@@ -84,15 +75,6 @@
 			height: auto;
 			max-width: 100%;
 		}
-	}
-
-	.intro {
-		background-color: #f6f6f6;
-		padding: 1rem 1.5rem;
-		border-radius: 5px;
-		margin: 3rem 0;
-		font-size: 0.8rem;
-		position: relative;
 	}
 
 	.mobile-image {
@@ -131,12 +113,22 @@
 
 	@media (max-width: $breakpoint-xs) {
 		main {
-			margin: 0 1rem;
+			margin: 0 2rem;
 		}
 
 		.hero {
 			flex-direction: column;
 			align-items: start;
+            text-align: center;
+            margin-top: 1rem;
+
+            h1 {
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                margin-top: 2rem;
+            }
 
 			&-text {
 				width: auto;
@@ -146,5 +138,9 @@
 				display: none;
 			}
 		}
+
+        .mobile-image {
+            display: block;
+        }
 	}
 </style>
