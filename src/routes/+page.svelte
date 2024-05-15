@@ -42,6 +42,12 @@
 		</div>
 	</div>
 
+    <div class="recents">
+        <h2>Recent Media</h2>
+
+        <iframe width="95%" height="auto" src="https://www.youtube.com/embed/enVbp8OtzQk?si=roErPg46IHYE9zpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
 </main>
 
 <style scoped lang="scss">
@@ -117,10 +123,12 @@
 		}
 
 		.hero {
+            display: flex;
 			flex-direction: column;
-			align-items: start;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
 
             h1 {
                 margin-bottom: 2rem;
@@ -141,6 +149,20 @@
 
         .mobile-image {
             display: block;
+        }
+
+        .recents {
+            text-align: center;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                border-bottom: 3px solid white;
+                width: max-content;
+                padding-bottom: 0.5rem;
+            }
         }
 	}
 </style>
