@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Law Office of Kenneth Wake",
+        "longDesc": "Deployed for a local law office utilizing HTML, CSS & Bootstrap to achieve a static landing page while using web APIs for Google Maps and contact form integration, with some use of JS animation libraries",
+        "imgSrc": "/images/KW_Display.png",
+        "isPublic": false,
+        "codeUrl": "",
+        "previewUrl": "https://kennethwake.com"
+    },
+    {
+        "name": "TM Buddy",
+        "longDesc": "TM Buddy is a manager tool built for a high volume enterprise environment. It's powered by React, React Router, React-Bootstrap and styled with custom SCSS.",
+        "imgSrc": "/images/TMBuddyDisplay.png",
+        "isPublic": true,
+        "codeUrl": "https://github.com/drewdoesdevelopment/TM-Buddy",
+        "previewUrl": "https://www.tmbuddy.net/"
+    }
+]

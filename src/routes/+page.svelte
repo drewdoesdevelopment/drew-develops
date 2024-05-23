@@ -87,36 +87,6 @@
 		display: none;
 	}
 
-	.btn {
-		padding: 10px 22px;
-		border-color: transparent;
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-		font-weight: 500;
-		font-size: 0.8rem;
-		text-decoration: none;
-
-		&:hover {
-			opacity: 0.8;
-			cursor: pointer;
-		}
-
-		&:visited {
-			color: initial;
-		}
-
-		&.primary {
-			background-color: white;
-			border-radius: 5px;
-			margin-right: 0.5rem;
-		}
-
-		&.secondary {
-			background-color: black;
-			color: white;
-			border-radius: 47px;
-		}
-	}
-
 	@media (max-width: $breakpoint-xs) {
 		main {
 			margin: 0 2rem;
