@@ -153,7 +153,7 @@
 			{/each}
 		</ul>
 
-		<button class="theme-selector" on:click={toggleTheme}>
+		<button title="Toggle Theme" class="theme-selector" on:click={toggleTheme}>
 			{#if theme === 'dark'}
 				<svg
 					width="24px"
