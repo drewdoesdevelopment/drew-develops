@@ -76,6 +76,16 @@ html[data-theme="dark"] {
         }
     }
 
+    .expertise-item {
+        svg {
+            fill: white;
+            
+            path {
+                fill: white !important;
+            }
+        }
+    }
+
     .intro {
         background-color: var(--dark-secondary) !important;
     }

@@ -5,34 +5,44 @@ import projects from '../../data/workExamples.json';
 <main>
     <h1>Previous Work</h1>
 
-    {#each projects as project}
-        <div class="example">
-            <div class="example-image">
-                <img src={project.imgSrc} alt="Desktop and Mobile frames showing the currently selected project in preview">
-            </div>
-            <div class="flex">
-                <div class="example-details">
-                    <h2>{project.name}</h2>
-                    <p>{project.longDesc}</p>
+    <div class="examples">
+        {#each projects as project}
+            <div class="example">
+                <div class="example-image">
+                    <img src={project.imgSrc} alt="Desktop and Mobile frames showing the currently selected project in preview">
                 </div>
-                <div class="example-cta">
-                    {#if project.isPublic !== false}
-                        <a href={project.codeUrl} class="primary btn">View Code</a>
-                    {/if}
-                    <a href={project.previewUrl} class="secondary btn">Live Preview</a>
+                <div class="flex">
+                    <div class="example-details">
+                        <h2>{project.name}</h2>
+                        <p>{project.longDesc}</p>
+                    </div>
+                    <div class="example-cta">
+                        {#if project.isPublic !== false}
+                            <a href={project.codeUrl} class="primary btn">View Code</a>
+                        {/if}
+                        <a href={project.previewUrl} class="secondary btn">Live Preview</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    {/each}
+        {/each}
+    </div>
 </main>
 
 <style lang='scss' scoped>
-    h1 {
-        margin-bottom: 3rem;
+    .examples {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
     }
+
+    .example:not(:first-child) {
+        margin-top: 8rem;
+    }
+
     .example {
         display: flex;
-        margin: 0 3rem;
 
         &-image img {
             max-height: 200px;      
@@ -44,6 +54,7 @@ import projects from '../../data/workExamples.json';
             p {
                 margin-top: -0.5rem;
                 margin-bottom: 1.5rem;
+                max-width: 800px;
             }
         }
 

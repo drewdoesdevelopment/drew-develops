@@ -1,7 +1,7 @@
 <script lang="ts">
-
 	import Typed from 'typed.js';
 	import { onMount } from 'svelte';
+    import ExpertiseItems from '../elements/ExpertiseItems.svelte';
 
 	let typeWriterElement: HTMLElement;
 
@@ -22,13 +22,13 @@
 <main>
 	<div class="hero">
 		<div class="flex-container hero-text">
-            <h1>Hey, I'm Drew</h1>
+			<h1>Hey, I'm Drew</h1>
 
-            <img
-                class="mobile-image"
-                alt="Drew sitting at a computer writing code"
-                src="/images/hero_svg.svg"
-            />
+			<img
+				class="mobile-image"
+				alt="Drew sitting at a computer writing code"
+				src="/images/hero_svg.svg"
+			/>
 
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
@@ -42,19 +42,18 @@
 		</div>
 	</div>
 
-    <div class="recents">
-        <h2>Recent Media</h2>
+	<div class="expertise">
+		<h2>Expertise</h2>
 
-        <iframe width="95%" height="auto" src="https://www.youtube.com/embed/enVbp8OtzQk?si=roErPg46IHYE9zpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
+        <ExpertiseItems />
+	</div>
 </main>
 
 <style scoped lang="scss">
 	@import '../styles/variables.scss';
 
 	main {
-		margin-top: 3rem;
+		margin-top: 6rem;
 	}
 
 	h1 {
@@ -87,26 +86,37 @@
 		display: none;
 	}
 
+	.expertise {
+		margin-top: 8rem;
+        margin-bottom: 4rem;
+
+		h2 {
+			text-align: center;
+			font-size: 1.8rem;
+            margin-bottom: 5rem;
+		}
+	}
+
 	@media (max-width: $breakpoint-xs) {
 		main {
 			margin: 0 2rem;
 		}
 
 		.hero {
-            display: flex;
+			display: flex;
 			flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin-top: 2rem;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin-top: 2rem;
 
-            h1 {
-                margin-bottom: 2rem;
-            }
+			h1 {
+				margin-bottom: 2rem;
+			}
 
-            h2 {
-                margin-top: 2rem;
-            }
+			h2 {
+				margin-top: 2rem;
+			}
 
 			&-text {
 				width: auto;
@@ -117,22 +127,8 @@
 			}
 		}
 
-        .mobile-image {
-            display: block;
-        }
-
-        .recents {
-            text-align: center;
-            margin-top: 4rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            h2 {
-                border-bottom: 3px solid white;
-                width: max-content;
-                padding-bottom: 0.5rem;
-            }
-        }
+		.mobile-image {
+			display: block;
+		}
 	}
 </style>
