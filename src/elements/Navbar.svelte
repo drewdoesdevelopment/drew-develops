@@ -46,7 +46,7 @@
     <div class="flex-left">
         <a class="logo" href="/">Drew Develops</a>
         <div class="buttons">
-            <button class="nav-menu-button" on:click={toggleNavMenu}>
+            <button title="Navigation Menu" class="nav-menu-button" on:click={toggleNavMenu}>
                 {#if theme === 'dark'}
                 <svg
                     width="24px"
@@ -91,7 +91,7 @@
                 </svg>
                 {/if}
             </button>
-            <button class="theme-selector mobile" on:click={toggleTheme}>
+            <button title="Toggle Theme" class="theme-selector mobile" on:click={toggleTheme}>
                 {#if theme === 'dark'}
                     <svg
                         width="24px"
