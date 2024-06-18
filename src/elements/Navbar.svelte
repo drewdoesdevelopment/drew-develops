@@ -44,7 +44,7 @@
 
 <nav id="nav">
     <div class="flex-left">
-        <a class="logo" href="/">Drew Develops</a>
+        <a tabindex="-1" class="logo" href="/">Drew Develops</a>
         <div class="buttons">
             <button title="Navigation Menu" class="nav-menu-button" on:click={toggleNavMenu}>
                 {#if theme === 'dark'}

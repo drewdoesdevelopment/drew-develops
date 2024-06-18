@@ -18,7 +18,7 @@
         <h3>Web Development</h3>
         <p>
             Whether you're looking for styling
-            updates to your app or site, updates to an existing API, or af fully custom webapp with the latest and greatest third-party integrations built in, I've got you covered!
+            updates to your app or site, updates to an existing API, or a fully custom webapp, I've got you covered!
         </p>
     </div>
 
@@ -48,7 +48,7 @@
 
         <h3>Web Accessibility (A11Y)</h3>
         <p>
-            Accessibility is not only an industry focus, but will greatly improve your platform's marketability and reputation, and will often be part of the deciding factor between competing software. I offer professional auditing, development, and consultation.
+            Having an Accessibile application for your users is becoming an increasingly deciding factor between competing software. I offer professional auditing, development, and consultation.
         </p>
     </div>
 
@@ -110,6 +110,7 @@ svg {
     .expertise-item {
         margin: 0 1rem;
         text-align: center;
+        padding: 1rem;
         width: 33%;
     }
 }

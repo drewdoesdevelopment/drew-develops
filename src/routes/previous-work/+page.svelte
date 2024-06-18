@@ -34,15 +34,25 @@ import projects from '../../data/workExamples.json';
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .example:not(:first-child) {
         margin-top: 8rem;
     }
 
+    .example:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        .flex {
+            margin-left: 0;
+            margin-right: 3rem;
+        }
+    }
+
     .example {
         display: flex;
+        margin: 6rem 0;
 
         &-image img {
             max-height: 200px;      

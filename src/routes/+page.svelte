@@ -4,7 +4,7 @@
     import ExpertiseItems from '../elements/ExpertiseItems.svelte';
 
 	let typeWriterElement: HTMLElement;
-
+    
 	onMount(() => {
 		new Typed(typeWriterElement, {
 			strings: [
@@ -17,6 +17,8 @@
 			loop: true
 		});
 	});
+
+
 </script>
 
 <main>
@@ -40,13 +42,20 @@
 		<div class="hero-image flex-container">
 			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
 		</div>
+
 	</div>
+
 
 	<div class="expertise">
-		<h2>Expertise</h2>
-
+		<h2>My Expertise</h2>
+        
         <ExpertiseItems />
 	</div>
+
+    <div class="cta">
+        
+    </div>
+
 </main>
 
 <style scoped lang="scss">
@@ -88,13 +97,13 @@
 
 	.expertise {
 		margin-top: 8rem;
-        margin-bottom: 4rem;
 
 		h2 {
 			text-align: center;
-			font-size: 1.8rem;
-            margin-bottom: 5rem;
+			font-size: 1.2rem;
+            font-weight: bold;
 		}
+
 	}
 
 	@media (max-width: $breakpoint-xs) {
