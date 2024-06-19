@@ -59,85 +59,86 @@
 </main>
 
 <style scoped lang="scss">
-	@import '../styles/variables.scss';
+@import '../styles/variables.scss';
 
-	main {
-		margin-top: 6rem;
-	}
+main {
+    margin-top: 6rem;
+}
 
-	h1 {
-		font-weight: 700;
-		margin-bottom: -0.3rem;
-	}
+h1 {
+    font-weight: 700;
+    margin-bottom: -0.3rem;
+}
 
-	h2 {
-		font-size: 1.2rem;
-		font-weight: 500;
-		margin-bottom: 1.5rem;
-	}
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
 
-	.hero {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-		&-text {
-			width: 40%;
-		}
+    &-text {
+        width: 40%;
+    }
 
-		img {
-			height: auto;
-			max-width: 100%;
-		}
-	}
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
 
-	.mobile-image {
-		display: none;
-	}
+.mobile-image {
+    display: none;
+}
 
-	.expertise {
-		margin-top: 8rem;
+.expertise {
+    margin-top: 8rem;
 
-		h2 {
-			text-align: center;
-			font-size: 1.2rem;
-            font-weight: bold;
-		}
+    h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
-	}
+}
 
-	@media (max-width: $breakpoint-xs) {
-		main {
-			margin: 0 2rem;
-		}
+@media (max-width: $breakpoint-s) {
+    main {
+        margin: 0 2rem;
+    }
 
-		.hero {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			margin-top: 2rem;
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
 
-			h1 {
-				margin-bottom: 2rem;
-			}
+        h1 {
+            margin-bottom: 2rem;
+        }
 
-			h2 {
-				margin-top: 2rem;
-			}
+        h2 {
+            margin-top: 2rem;
+        }
 
-			&-text {
-				width: auto;
-			}
+        &-text {
+            width: auto;
+        }
 
-			&-image {
-				display: none;
-			}
-		}
+        &-image {
+            display: none;
+        }
+    }
 
-		.mobile-image {
-			display: block;
-		}
-	}
+    .mobile-image {
+        display: block;
+    }
+}
+
 </style>

@@ -99,6 +99,8 @@
     </div>
 </div>
 <style lang="scss">
+@import '../styles/variables.scss';
+
 svg {
     width: 120px;
     height: 120px;
@@ -112,6 +114,19 @@ svg {
         text-align: center;
         padding: 1rem;
         width: 33%;
+    }
+}
+
+@media (max-width: $breakpoint-s) {
+    .expertise {
+        &-item {
+            width: 100% !important;
+        }
+
+        &-items {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 </style>
