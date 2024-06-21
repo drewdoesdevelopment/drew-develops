@@ -62,9 +62,17 @@
 		}
 	}
 
-    @media (max-width: $breakpoint-xs) {
+    @media (max-width: $breakpoint-s) {
         footer {
-            margin: 2rem 2rem 0 2rem;
+            flex-direction: column;
+
+            .socials {
+                margin-left: 0.8rem;
+            }
+
+            .copyright {
+                margin-top: -1.2rem;
+            }
         }
     }
 </style>

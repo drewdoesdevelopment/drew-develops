@@ -209,6 +209,7 @@
 
         .nav-menu-mobile {
             display: none;
+            padding-left: 1rem;
         }
 
 		.logo {
@@ -290,7 +291,7 @@
         }
     }
 
-	@media (max-width: 698px) {
+	@media (max-width: $breakpoint-s) {
 		nav {
             flex-direction: column;
 			align-items: start;

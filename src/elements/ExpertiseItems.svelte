@@ -121,6 +121,7 @@ svg {
     .expertise {
         &-item {
             width: 100% !important;
+            margin-bottom: 2rem !important;
         }
 
         &-items {

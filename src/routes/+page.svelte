@@ -120,12 +120,17 @@ h2 {
         margin-top: 2rem;
 
         h1 {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+
         }
 
         h2 {
-            margin-top: 2rem;
+            margin: 3rem 0;
+            font-size: 1rem;
+            height: 50px;
         }
+
 
         &-text {
             width: auto;
@@ -138,6 +143,8 @@ h2 {
 
     .mobile-image {
         display: block;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
