@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <button class="btn primary">Submit</button>
+                    <button>Submit</button>
                 </fieldset>
             </form>
         </div>
@@ -72,16 +72,16 @@ form {
     width: 990px;
 
     input {
-        background-color: #f7eeee;
+        background-color: #f7f7f7;
         border-color: transparent;
         color: black;
         max-width: 320px;
     }
 
     textarea {
-        background-color: #f7eeee;
+        background-color: #f7f7f7;
         border-color: transparent;
-        color: white;
+        color: black;
         resize: none;
         font-family: inherit;
         padding: 5px 10px;
@@ -129,9 +129,19 @@ fieldset {
 button {
     width: 90%;
     height: 40px;
+    border: none;
     margin-top: 2rem;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.8rem;
+    
+    &:hover, &:focus {
+        opacity: 0.7;
+    }
 }
 
 @media (max-width: $breakpoint-s) {
@@ -146,7 +156,7 @@ button {
 
     form {
         width: 80%;
-        margin-left: 0.8rem;
+        margin-left: 0.9rem;
     }
 
     img {
@@ -164,11 +174,9 @@ button {
         }
     }
 
-    legend {
-    }
-
     label {
         width: 100%;
+        margin-bottom: 0.6rem;
     }
 
     button {

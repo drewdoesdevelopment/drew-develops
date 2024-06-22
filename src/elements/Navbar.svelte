@@ -303,6 +303,7 @@
 
             .nav-menu-button {
                 display: block;
+                cursor: pointer;
             }
 
             .theme-selector {
