@@ -1,5 +1,6 @@
 <script lang="ts">
 import projects from '../../data/workExamples.json';
+import CallToAction from '../../elements/CallToAction.svelte';
 </script>
 
 <main>
@@ -26,6 +27,7 @@ import projects from '../../data/workExamples.json';
             </div>
         {/each}
     </div>
+    <CallToAction />
 </main>
 
 <style lang='scss' scoped>
@@ -75,14 +77,13 @@ import projects from '../../data/workExamples.json';
         }
     }
 
-
     @media (max-width: $breakpoint-s) {
         h1 {
             margin-top: 3rem;
             text-align: center;
         }
 
-        h2 {
+        .examples h2 {
             margin-top: 3rem;
         }
         .example, .example:nth-child(2n) {

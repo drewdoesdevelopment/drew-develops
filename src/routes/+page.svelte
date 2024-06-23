@@ -2,6 +2,7 @@
 	import Typed from 'typed.js';
 	import { onMount } from 'svelte';
     import ExpertiseItems from '../elements/ExpertiseItems.svelte';
+	import CallToAction from '../elements/CallToAction.svelte';
 
 	let typeWriterElement: HTMLElement;
     
@@ -42,7 +43,6 @@
 		<div class="hero-image flex-container">
 			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
 		</div>
-
 	</div>
 
 
@@ -52,10 +52,7 @@
         <ExpertiseItems />
 	</div>
 
-    <div class="cta">
-        
-    </div>
-
+    <CallToAction />
 </main>
 
 <style scoped lang="scss">
