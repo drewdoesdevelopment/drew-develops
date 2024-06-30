@@ -61,15 +61,13 @@
     }
 
     img {
-        max-width: 300px;
+        max-width: 35%;
         margin-right: 6rem;
     }
 }
 
 form {
-    padding: 1rem;
-    border-radius: 10px;
-    width: 990px;
+    width: 100%;
 
     input {
         background-color: #f7f7f7;
@@ -96,6 +94,7 @@ form {
 
         &-1 {
             width: 40%;
+            margin-right: 1rem;
         }
 
         &-2 {
@@ -127,7 +126,7 @@ fieldset {
 }
 
 button {
-    width: 90%;
+    width: 94%;
     height: 40px;
     border: none;
     margin-top: 2rem;
@@ -156,7 +155,7 @@ button {
 
     form {
         width: 80%;
-        margin-left: 0.9rem;
+        margin: 0 auto;
     }
 
     img {
