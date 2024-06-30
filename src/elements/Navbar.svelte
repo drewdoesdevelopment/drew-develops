@@ -338,4 +338,10 @@
             }
         }
 	}
+
+    @media (min-width: $breakpoint-m) {
+        nav {
+            margin: 3rem 6rem 0 6rem;
+        }
+    }
 </style>

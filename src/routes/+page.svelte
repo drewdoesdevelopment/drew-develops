@@ -145,4 +145,10 @@ h2 {
     }
 }
 
+@media (min-width: $breakpoint-m) {
+    .hero {
+        justify-content: space-around;
+    }
+}
+
 </style>
