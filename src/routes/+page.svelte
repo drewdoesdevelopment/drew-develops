@@ -63,7 +63,8 @@ main {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 1.8rem;
     margin-bottom: -0.3rem;
 }
 
@@ -80,6 +81,7 @@ h2 {
 
     &-text {
         width: 40%;
+        margin-bottom: 4rem;
     }
 
     img {
@@ -103,6 +105,15 @@ h2 {
 
 }
 
+@media (min-width: $breakpoint-xs) {
+    .hero {
+        h2 {
+            font-size: 1.3rem !important;
+            height: 80px;
+        }
+    }
+}
+
 @media (max-width: $breakpoint-s) {
     main {
         margin: 0 2rem;
@@ -117,15 +128,14 @@ h2 {
         margin-top: 2rem;
 
         h1 {
+            margin-top: 0;
             margin-bottom: 3rem;
-            font-size: 1.6rem;
-
         }
 
         h2 {
             margin: 3rem 0;
             font-size: 1rem;
-            height: 50px;
+            height: 60px;
         }
 
 
@@ -142,6 +152,19 @@ h2 {
         display: block;
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+
+@media (min-width: $breakpoint-s) {
+    .hero {
+        &-text {
+            width: 60%;
+        }
+
+        &-image {
+            max-width: 40%;
+        }
     }
 }
 

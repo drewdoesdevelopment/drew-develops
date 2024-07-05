@@ -213,8 +213,11 @@
         }
 
 		.logo {
-			font-weight: bold;
-			font-size: 1.2rem;
+            font-size: 1.1rem;
+            border-left: 3px solid black;
+            font-weight: 600;
+            padding-left: 8px;
+            text-transform: uppercase;
 		}
 
         .nav-menu-button {
@@ -282,6 +285,10 @@
 				height: 2px !important;
 				border-radius: 5px;
 			}
+
+            .logo {
+                border-color: white;
+            }
 		}
 	}
 
@@ -295,6 +302,8 @@
 		nav {
             flex-direction: column;
 			align-items: start;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
 
 			ul {
                 display: none;

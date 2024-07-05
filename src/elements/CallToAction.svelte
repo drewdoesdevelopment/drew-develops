@@ -20,7 +20,7 @@
     .cta {
         text-align: center;
         margin-top: 0rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 }
 </style>

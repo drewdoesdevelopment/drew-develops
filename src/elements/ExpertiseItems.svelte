@@ -117,7 +117,7 @@ svg {
     }
 }
 
-@media (max-width: $breakpoint-s) {
+@media (max-width: $breakpoint-m) {
     .expertise {
         &-item {
             width: 100% !important;

@@ -108,11 +108,11 @@ main {
 }
 
 .btn {
-    padding: 10px 22px;
+    padding: 13px 26px;
     border-color: transparent;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-weight: 500;
-    font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 1.1rem;
     text-decoration: none;
 
     &:hover {
@@ -147,5 +147,11 @@ main {
 
     main {
         margin: 0 2rem;
+    }
+}
+
+@media(max-width: $breakpoint-s) {
+    btn {
+        padding: 10px 22px !important;
     }
 }
