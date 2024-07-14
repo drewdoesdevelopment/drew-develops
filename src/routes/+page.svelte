@@ -36,9 +36,10 @@
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
-
-			<a href="/previous-work" class="primary btn">See My Work</a>
-			<a href="/connect" class="secondary btn">Let's Chat</a>
+            <div class="hero-buttons">
+                <a href="/previous-work" class="primary btn">See My Work</a>
+                <a href="/connect" class="secondary btn">Let's Chat</a>
+            </div>
 		</div>
 		<div class="hero-image flex-container">
 			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
@@ -71,7 +72,7 @@ h1 {
 h2 {
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .hero {
@@ -105,11 +106,19 @@ h2 {
 
 }
 
+
+@media (max-width: $breakpoint-xs) {
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (min-width: $breakpoint-xs) {
     .hero {
         h2 {
-            font-size: 1.3rem !important;
-            height: 80px;
+            font-size: 1.5rem !important;
+            margin-bottom: 6rem;
         }
     }
 }
@@ -133,7 +142,7 @@ h2 {
         }
 
         h2 {
-            margin: 3rem 0;
+            margin-top: 3rem;
             font-size: 1rem;
             height: 60px;
         }
