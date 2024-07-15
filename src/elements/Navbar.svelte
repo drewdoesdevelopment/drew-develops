@@ -214,10 +214,7 @@
 
 		.logo {
             font-size: 1.1rem;
-            border-left: 3px solid black;
-            font-weight: 600;
-            padding-left: 8px;
-            text-transform: uppercase;
+            font-weight: 500;
 		}
 
         .nav-menu-button {
@@ -344,6 +341,14 @@
         @media (max-width: $breakpoint-xs) {
             nav {
                 padding: 1.5rem 1rem 0 1rem;
+                
+                .buttons {
+                    margin-top: 4px;
+                }
+
+                .logo {
+                    font-size: 1rem;
+                }
             }
         }
 	}

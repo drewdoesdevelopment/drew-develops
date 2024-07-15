@@ -9,17 +9,15 @@
 	onMount(() => {
 		new Typed(typeWriterElement, {
 			strings: [
-				'captivating, SEO-focused websites',
-				'a11y compliant solutions',
-				'impactful customer experiences'
+				'SEO-focused, top resulting websites',
+				'WCAG compliant software',
+				'impactful end-user experiences'
 			],
 			typeSpeed: 40,
 			backSpeed: 32,
 			loop: true
 		});
 	});
-
-
 </script>
 
 <main>
@@ -95,6 +93,12 @@ h2 {
     display: none;
 }
 
+
+.btn {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
 .expertise {
     margin-top: 8rem;
 
@@ -111,6 +115,29 @@ h2 {
     .hero-buttons {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        .btn {
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            width: 80%;
+        }
+
+    }
+
+    .hero h1 {
+        margin-top: 0.5rem !important;
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        margin-top: 3rem !important;
+        margin-bottom: 2rem;
+    }
+
+    .expertise {
+        margin-top: 1rem;
     }
 }
 
@@ -123,7 +150,7 @@ h2 {
     }
 }
 
-@media (max-width: $breakpoint-s) {
+@media (max-width: 1000px) {
     main {
         margin: 0 2rem;
     }
@@ -165,21 +192,49 @@ h2 {
 }
 
 
-@media (min-width: $breakpoint-s) {
+@media (min-width: 1000px) {
     .hero {
+        margin: 0 3rem;
+
+        h1 {
+            margin-bottom: 0 !important;
+        }
+
+        h2 {
+            height: 60px;
+        }
+
         &-text {
-            width: 60%;
+            width: 50%;
         }
 
         &-image {
             max-width: 40%;
         }
     }
+
 }
 
+// Unique for the typing effect
+@media (min-width: 515px) {
+    .hero h1 {
+        margin: 2rem 0 4rem 0;
+        font-size: 2.4rem;
+    }
+
+    .hero h2 {
+        margin-bottom: 4rem;
+    }
+}
+
+// Desktop
 @media (min-width: $breakpoint-m) {
     .hero {
         margin: 0 3rem;
+
+        h1 {
+            margin-bottom: 0 !important;
+        }
     }
 }
 
