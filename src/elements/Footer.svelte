@@ -75,4 +75,11 @@
             }
         }
     }
+
+
+    @media (min-width: 2560px) {
+        footer {
+            margin: 0 14rem 5rem 14rem;
+        }
+    }
 </style>

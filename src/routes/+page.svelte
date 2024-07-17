@@ -9,7 +9,7 @@
 	onMount(() => {
 		new Typed(typeWriterElement, {
 			strings: [
-				'SEO-focused, top resulting websites',
+				'top resulting websites',
 				'WCAG compliant software',
 				'impactful end-user experiences'
 			],
@@ -205,7 +205,8 @@ h2 {
         }
 
         &-text {
-            width: 50%;
+            width: 60%;
+            margin-right: 3rem;
         }
 
         &-image {
@@ -223,7 +224,7 @@ h2 {
     }
 
     .hero h2 {
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
     }
 }
 
@@ -238,4 +239,50 @@ h2 {
     }
 }
 
+
+@media (min-width: 1400px) {
+    .hero-image {
+        max-width: 50%;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 5rem;
+    }
+}
+
+// 1080p
+@media (min-width: 1920px) {
+    .hero-image {
+        max-width: 50%;
+    }
+
+    .hero-text {
+        max-width: 50%;
+
+        h2 {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+// 1440p
+@media (min-width: 2560px) {
+    .hero {
+        justify-content: unset;
+
+        &-text {
+            margin-left: auto;
+        }
+
+        &-image {
+            margin-right: auto;
+        }
+    }
+
+    .expertise {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
 </style>

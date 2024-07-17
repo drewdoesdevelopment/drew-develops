@@ -358,4 +358,11 @@
             margin: 3rem 6rem 0 6rem;
         }
     }
+
+
+    @media (min-width: 2560px) {
+        nav {
+            margin: 5rem 14rem 0 14rem;
+        }
+    }
 </style>
