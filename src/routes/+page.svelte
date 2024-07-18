@@ -9,12 +9,13 @@
 	onMount(() => {
 		new Typed(typeWriterElement, {
 			strings: [
-				'top resulting websites',
-				'WCAG compliant software',
-				'impactful end-user experiences'
+				'SEO-focused, top resulting websites.',
+				'WCAG (A11Y) compliant UIs.',
+				'impactful end-user experiences.'
 			],
 			typeSpeed: 40,
-			backSpeed: 32,
+			backSpeed: 40,
+            backDelay: 1500,
 			loop: true
 		});
 	});
@@ -32,7 +33,7 @@
 			/>
 
 			<h2>
-				I'm a software engineer that creates <span bind:this={typeWriterElement} />
+				I'm a software developer that creates <span bind:this={typeWriterElement} />
 			</h2>
             <div class="hero-buttons">
                 <a href="/previous-work" class="primary btn">See My Work</a>
@@ -86,6 +87,7 @@ h2 {
     img {
         height: auto;
         max-width: 100%;
+        width: 1200px;
     }
 }
 
@@ -268,21 +270,5 @@ h2 {
 
 // 1440p
 @media (min-width: 2560px) {
-    .hero {
-        justify-content: unset;
-
-        &-text {
-            margin-left: auto;
-        }
-
-        &-image {
-            margin-right: auto;
-        }
-    }
-
-    .expertise {
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
 }
 </style>

@@ -130,4 +130,13 @@ svg {
         }
     }
 }
+
+@media (min-width: 1920px) {
+.expertise-items {
+
+    .expertise-item {
+        padding: 4rem;
+    }
+}
+}
 </style>
