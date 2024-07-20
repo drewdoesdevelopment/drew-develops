@@ -8,7 +8,6 @@
 
 .cta {
     text-align: center;
-    margin: 6rem 0;
 
     h3 {
         margin-bottom: 2rem;
@@ -21,6 +20,18 @@
         text-align: center;
         margin-top: 0rem;
         margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    .cta {
+        margin: 8rem 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .cta {
+        margin: 12rem 0;
     }
 }
 </style>

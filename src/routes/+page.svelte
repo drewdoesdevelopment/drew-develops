@@ -188,7 +188,7 @@ h2 {
 
     .mobile-image {
         display: block;
-        width: 80%;
+        width: 80% !important;
         margin: 0 auto;
     }
 }
@@ -265,6 +265,10 @@ h2 {
         h2 {
             margin-bottom: 4rem;
         }
+    }
+
+    .expertise {
+        margin: 12rem 0 !important;
     }
 }
 

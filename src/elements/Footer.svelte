@@ -26,7 +26,7 @@
     @import '../styles/variables.scss';
 
 	footer {
-		margin: 0 4rem;
+		margin: 3rem 7rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
