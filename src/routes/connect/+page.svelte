@@ -143,7 +143,7 @@ button {
     }
 }
 
-@media (max-width: $breakpoint-s) {
+@media (max-width: $breakpoint-xl) {
     .flex-inner  {
         flex-direction: column;
     }

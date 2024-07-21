@@ -196,7 +196,6 @@ h2 {
 
 @media (min-width: 1000px) {
     .hero {
-        margin: 0 3rem;
 
         h1 {
             margin-bottom: 0 !important;
@@ -233,8 +232,6 @@ h2 {
 // Desktop
 @media (min-width: $breakpoint-m) {
     .hero {
-        margin: 0 3rem;
-
         h1 {
             margin-bottom: 0 !important;
         }
