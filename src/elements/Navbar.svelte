@@ -44,7 +44,7 @@
 
 <nav id="nav">
     <div class="flex-left">
-        <a tabindex="-1" class="logo" href="/">Drew Develops</a>
+        <a tabindex="-1" class="logo" href="/">DD.</a>
         <div class="buttons">
             <button title="Navigation Menu" class="nav-menu-button" on:click={toggleNavMenu}>
                 {#if theme === 'dark'}
@@ -213,8 +213,9 @@
         }
 
 		.logo {
-            font-size: 1.1rem;
-            font-weight: 500;
+            font-family: Hammersmith;
+            font-size: 1.4rem;
+            font-weight: 800;
 		}
 
         .nav-menu-button {

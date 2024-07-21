@@ -18,9 +18,16 @@
     font-weight: 300;
 }
 
+
 @font-face {
     font-family: 'Poppins';
     src: url('/src/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Hammersmith';
+    src: url('/src/fonts/HammersmithOne-Regular.ttf');
     font-weight: 400;
 }
 
@@ -104,7 +111,7 @@ body {
 }
 
 main {
-    margin: 0 4rem;
+    margin: 0 7rem;
 }
 
 .btn {
