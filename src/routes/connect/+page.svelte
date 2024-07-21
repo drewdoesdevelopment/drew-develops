@@ -38,9 +38,9 @@
                                 />
                             </label>
                         </div>
-                    </div>
 
                     <button>Submit</button>
+                    </div>
                 </fieldset>
             </form>
         </div>
@@ -73,7 +73,6 @@ form {
         background-color: #f7f7f7;
         border-color: transparent;
         color: black;
-        max-width: 320px;
     }
 
     textarea {
@@ -143,9 +142,11 @@ button {
     }
 }
 
-@media (max-width: $breakpoint-xl) {
+@media (max-width: $breakpoint-m) {
     .flex-inner  {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     h1 {
@@ -155,7 +156,6 @@ button {
 
     form {
         width: 80%;
-        margin: 0 auto;
     }
 
     img {
@@ -167,9 +167,14 @@ button {
 
     .flex {
         flex-direction: column;
+        width: 80%;
+        justify-content: center;
 
         &-1, &-2 {
             width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -179,7 +184,12 @@ button {
     }
 
     button {
-        width: 100%;
+        width: 80%;
+        align-self: center;
+    }
+
+    main {
+        margin: 0;
     }
 }
 </style>
