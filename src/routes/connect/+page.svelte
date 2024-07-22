@@ -122,6 +122,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     border: none;
+    align-items: center;
 }
 
 button {
@@ -139,6 +140,12 @@ button {
     
     &:hover, &:focus {
         opacity: 0.7;
+    }
+}
+
+@media  (max-width: $breakpoint-xs) {
+    form {
+        width: 60% !important;
     }
 }
 

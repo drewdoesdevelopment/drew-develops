@@ -290,7 +290,7 @@
 		}
 	}
 
-    @media (min-width: 699px) {
+    @media (min-width: 800px) {
         .nav-menu-mobile {
             display: none !important;
         }
