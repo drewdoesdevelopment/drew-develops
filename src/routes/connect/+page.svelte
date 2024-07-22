@@ -145,7 +145,17 @@ button {
 
 @media  (max-width: $breakpoint-xs) {
     form {
-        width: 60% !important;
+        input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            margin-left: 1rem;
+        }
     }
 }
 
