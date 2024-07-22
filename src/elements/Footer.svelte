@@ -62,6 +62,12 @@
 		}
 	}
 
+    @media (max-width: $breakpoint-xs) {
+        footer {
+            margin: 3rem 0;
+        }
+    }
+
     @media (max-width: $breakpoint-s) {
         footer {
             flex-direction: column;
