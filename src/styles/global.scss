@@ -77,9 +77,19 @@ html[data-theme="dark"] {
         color: var(--dark-text-color) !important;
     }
 
-    .socials {
+    .socials, .social-plug {
         svg {
             fill: white;
+
+            path {
+                fill: white;
+            }
+        }
+    }
+
+    .social-plug {
+        p {
+            border-color: white !important;
         }
     }
 
@@ -100,6 +110,11 @@ html[data-theme="dark"] {
 
     form button {
         box-shadow: #00000070 0px 8px 24px !important;
+    }
+
+    .contact input, .contact textarea {
+        background-color: #19181c !important;
+        color: white !important;
     }
 }
 
