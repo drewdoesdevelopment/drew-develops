@@ -10,7 +10,7 @@
 		new Typed(typeWriterElement, {
 			strings: [
 				'SEO-focused, top resulting websites.',
-				'WCAG (A11Y) compliant UIs.',
+				'WCAG (A11Y) compliant software.',
 				'impactful end-user experiences.'
 			],
 			typeSpeed: 40,
@@ -33,7 +33,7 @@
 			/>
 
 			<h2>
-				I'm a software developer that creates <span bind:this={typeWriterElement} />
+				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
             <div class="hero-buttons">
                 <a href="/previous-work" class="primary btn">See My Work</a>
@@ -97,6 +97,7 @@ h2 {
 
 
 .btn {
+    font-size: 1rem;
     margin-bottom: 1rem;
     border-radius: 6px;
 }
@@ -146,8 +147,8 @@ h2 {
 @media (min-width: $breakpoint-xs) {
     .hero {
         h2 {
-            font-size: 1.5rem !important;
-            margin-bottom: 6rem;
+            font-size: 1.2rem !important;
+            margin-bottom: 4rem;
         }
     }
 }
