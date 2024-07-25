@@ -4,7 +4,7 @@
     <div class="flex-container">
         <div class="flex-inner">
             <div class="social-plug">
-                <p>Follow Me On</p>
+                <p>Follow Me</p>
                 <ul>
                     <li>
                         <a href="https://github.com/drewdoesdevelopment" target="_blank" rel="noreferrer" aria-label="Drew Develops GitHub profile">
@@ -78,8 +78,9 @@
 
 .flex-container {
     display: flex;
-    margin: 4rem 0;
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 
     .flex-inner {
         display: flex;
@@ -102,8 +103,8 @@
     margin-bottom: 3rem;
 
     p {
-        border-bottom: 4px solid black;
-        padding-bottom: 1.3rem;
+        border-bottom: 2px solid black;
+        padding-bottom: 1rem;
         width: 220px;
         font-size: 1.5rem;
         font-weight: bold;
