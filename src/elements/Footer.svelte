@@ -17,9 +17,8 @@
 			</li>
 			<li>
 				<a
-					href="https://github.com/drewdoesdevelopment"
+					href="https://www.linkedin.com/in/drewdevelops"
 					target="_blank"
-					rel="noreferrer"
 					aria-label="Drew Develops Linkedin profile"
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
