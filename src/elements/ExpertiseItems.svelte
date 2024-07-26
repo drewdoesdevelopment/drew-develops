@@ -48,7 +48,7 @@
 
         <h3>Web Accessibility (A11Y)</h3>
         <p>
-            Having an Accessibile application for your users is becoming an increasingly deciding factor between competing software. I offer professional auditing, development, and consultation.
+            Having an accessibile application for your users has become a UX and legal necessity, and often a deciding factor between competing software. I offer professional auditing, development, and consultation.
         </p>
     </div>
 
