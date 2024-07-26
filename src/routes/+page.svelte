@@ -149,7 +149,7 @@ h2 {
     .hero {
         h2 {
             font-size: 1.3rem !important;
-            margin-bottom: 4rem;
+            margin-bottom: 5rem;
         }
     }
 }
