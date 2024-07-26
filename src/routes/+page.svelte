@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 4rem;
 }
@@ -97,9 +97,9 @@ h2 {
 
 
 .btn {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .expertise {
@@ -135,8 +135,9 @@ h2 {
     }
 
     .hero h2 {
-        margin-top: 3rem !important;
-        margin-bottom: 2rem;
+        margin-top: 4rem !important;
+        margin-bottom: 4rem;
+        font-size: 1.2rem !important;
     }
 
     .expertise {
@@ -147,8 +148,8 @@ h2 {
 @media (min-width: $breakpoint-xs) {
     .hero {
         h2 {
-            font-size: 1.2rem !important;
-            margin-bottom: 4rem;
+            font-size: 1.5rem !important;
+            margin-bottom: 5rem;
         }
     }
 }
@@ -172,7 +173,7 @@ h2 {
         }
 
         h2 {
-            margin-top: 3rem;
+            margin-top: 4rem;
             font-size: 1rem;
             height: 60px;
         }
@@ -218,6 +219,7 @@ h2 {
 
 }
 
+
 // Unique for the typing effect
 @media (min-width: 515px) {
     .hero h1 {
@@ -246,8 +248,8 @@ h2 {
     }
 
     .hero h2 {
-        font-size: 1.8rem !important;
-        margin-bottom: 5rem;
+        font-size: 1.4rem !important;
+        margin-bottom: 3rem;
     }
 }
 

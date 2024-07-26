@@ -1,6 +1,6 @@
 <div class="cta">
-        <h3>Let's talk about how I can improve your web services</h3>
-        <a href="/connect" class="secondary btn">Setup a Free Consult</a>
+        <h3>Let's explore how I can improve your web services</h3>
+        <a href="/connect" class="secondary btn">Setup a Call</a>
 </div>
 
 <style scoped lang="scss">
@@ -19,7 +19,14 @@
     .cta {
         text-align: center;
         margin-top: 0rem;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .cta {
+        margin: 3rem 0 6rem 0 !important;
     }
 }
 

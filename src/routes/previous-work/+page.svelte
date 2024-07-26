@@ -116,4 +116,16 @@ import CallToAction from '../../elements/CallToAction.svelte';
             }
         }
     }
+
+    @media (max-width: 550px) {
+        .example-cta {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-bottom: 1rem;
+                border-radius: 4px;
+            }
+        }
+    }
 </style>
