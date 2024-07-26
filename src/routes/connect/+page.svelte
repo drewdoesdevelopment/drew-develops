@@ -150,9 +150,10 @@ form {
     }
 
     button {
+        border-radius: 4px;
         margin-top: 2rem;
         width: 95%;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .flex {
@@ -222,6 +223,7 @@ fieldset {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     
     legend {
