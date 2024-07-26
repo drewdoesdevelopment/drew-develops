@@ -10,7 +10,7 @@
 		new Typed(typeWriterElement, {
 			strings: [
 				'SEO-focused, top resulting websites.',
-				'WCAG (A11Y) compliant software.',
+				'WCAG (a11y) compliant software.',
 				'impactful end-user experiences.'
 			],
 			typeSpeed: 40,
@@ -148,8 +148,8 @@ h2 {
 @media (min-width: $breakpoint-xs) {
     .hero {
         h2 {
-            font-size: 1.5rem !important;
-            margin-bottom: 5rem;
+            font-size: 1.3rem !important;
+            margin-bottom: 4rem;
         }
     }
 }
@@ -269,6 +269,18 @@ h2 {
 
     .expertise {
         margin: 12rem 0 !important;
+    }
+}
+
+@media (min-width: 840px) {
+    .hero h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1982px) {
+    .hero h2 {
+        margin-bottom: 2rem;
     }
 }
 

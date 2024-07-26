@@ -80,7 +80,7 @@
     display: flex;
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 
     .flex-inner {
         display: flex;
@@ -105,8 +105,8 @@
     p {
         border-bottom: 2px solid black;
         padding-bottom: 1rem;
-        width: 220px;
-        font-size: 1.5rem;
+        width: 180px;
+        font-size: 1.1rem;
         font-weight: bold;
     }
 
@@ -114,13 +114,13 @@
         display: flex;
         list-style: none;
         padding-left: 0;
-        margin-top: 0.2rem !important;
+        margin-top: 0.4rem !important;
     }
 
     svg {
-        width: 32px;
-        height: 32px;
-        margin: 0 1rem 0 1rem;
+        width: 24px;
+        height: 24px;
+        margin: 0 0.5rem 0 0.5rem;
     }
 }
 
