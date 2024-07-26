@@ -13,9 +13,9 @@
 				'WCAG (a11y) compliant software.',
 				'impactful end-user experiences.'
 			],
-			typeSpeed: 40,
-			backSpeed: 40,
-            backDelay: 1500,
+			typeSpeed: 60,
+			backSpeed: 30,
+            backDelay: 3000,
 			loop: true
 		});
 	});
