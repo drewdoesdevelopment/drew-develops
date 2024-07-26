@@ -25,7 +25,7 @@
     },
     {
         "name": "Drew Develops (previous)",
-        "longDesc": "My current portfolio, which I designed myself using Figma and created with vanilla CSS and JS, no use of frameworks or prebuilt components.",
+        "longDesc": "My previous portfolio developed in 2020, which I designed myself using Figma and created with vanilla CSS and JS, no use of frameworks or prebuilt components.",
         "imgSrc": "/images/DrewDevelopsDisplay.png",
         "isPublic": true,
         "codeUrl": "https://github.com/drewdoesdevelopment/TM-Buddy",
