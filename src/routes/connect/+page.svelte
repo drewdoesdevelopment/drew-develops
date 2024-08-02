@@ -30,7 +30,7 @@
                     </li>
                 </ul>
             </div>
-            <form action="submit">
+            <form method="POST">
                 <fieldset class="contact">
                     <legend>Contact Form</legend>
 
@@ -38,17 +38,17 @@
                         <div class="flex-1">
                             <label>
                                 <span>Name</span>
-                                <input class="textInput" required type="text" placeholder="Tony S." />
+                                <input name="name" class="textInput" required type="text" placeholder="Tony S." />
                             </label>
 
                             <label>
                                 <span>Email</span>
-                                <input class="textInput" required type="email" placeholder="tony@starkindustries.net" />
+                                <input name="email" class="textInput" required type="email" placeholder="tony@starkindustries.net" />
                             </label>
 
                             <label>
                                 <span>Phone (optional)</span>
-                                <input class="textInput" type="tel" placeholder="867-5309" />
+                                <input name="phone" class="textInput" type="tel" placeholder="867-5309" />
                             </label>
                         </div>
 
