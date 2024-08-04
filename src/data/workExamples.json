@@ -19,8 +19,7 @@
         "name": "Drew Develops (current)",
         "longDesc": "Built with SvelteKit using fully unique styles designed myself, this refreshed website is not only a visual improvement from my last, but also a performance improvement. I've made a dark/light-mode theme selector that will set default to your OS theme, or allow you to change it yourself. Additionally, templating is used in favor of hardcoded html where possible. SvelteKit was chosen intentionally for performance and to maintain as lightweight of a footprint on the client as my first portfolio.",
         "imgSrc": "/images/DrewDevelopsDisplayNew.png",
-        "isPublic": true,
-        "codeUrl": "https://github.com/drewdoesdevelopment/TM-Buddy",
+        "isPublic": false,
         "previewUrl": "https://www.drewdevelops.com/"
     },
     {
@@ -28,7 +27,7 @@
         "longDesc": "My previous portfolio developed in 2020, which I designed myself using Figma and created with vanilla CSS and JS, no use of frameworks or prebuilt components.",
         "imgSrc": "/images/DrewDevelopsDisplay.png",
         "isPublic": true,
-        "codeUrl": "https://github.com/drewdoesdevelopment/TM-Buddy",
+        "codeUrl": "https://github.com/drewdoesdevelopment/Drew-Develops-Portfolio",
         "previewUrl": "https://www.drewdevelops.com/"
     }
 ]
