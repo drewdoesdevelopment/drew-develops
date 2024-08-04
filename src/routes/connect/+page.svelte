@@ -1,3 +1,21 @@
+<script>
+import { sendData } from './sendData'; 
+
+function handleSubmit(event) {
+    const formData = new FormData(event.target);
+
+    const changes = {
+        name: formData.get('name'),
+        phone: formData.get('phone'),
+        email: formData.get('email'),
+        note: formData.get('commentField'),
+    }
+
+    sendData(changes);
+}
+
+</script>
+
 <main>
 	<h1>Let's Connect</h1>
 
@@ -30,7 +48,7 @@
                     </li>
                 </ul>
             </div>
-            <form method="POST">
+            <form on:submit|preventDefault={handleSubmit}>
                 <fieldset class="contact">
                     <legend>Contact Form</legend>
 
