@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { sendData } from './sendData'; 
 
 function handleSubmit(event) {
