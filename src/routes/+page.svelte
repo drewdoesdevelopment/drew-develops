@@ -25,13 +25,11 @@
 	<div class="hero">
 		<div class="flex-container hero-text">
 			<h1>Hey, I'm Drew</h1>
-
 			<img
 				class="mobile-image"
 				alt="Drew sitting at a computer writing code"
 				src="/images/hero_svg.svg"
 			/>
-
 			<h2>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
@@ -47,7 +45,7 @@
 
 
 	<div class="expertise">
-		<h2>My Expertise</h2>
+		<h2>Expertise</h2>
         
         <ExpertiseItems />
 	</div>
@@ -106,8 +104,8 @@ h2 {
     margin-top: 8rem;
 
     h2 {
-        text-align: center;
         font-size: 1.2rem;
+        text-align: center;
         font-weight: bold;
     }
 
