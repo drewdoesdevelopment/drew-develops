@@ -52,15 +52,19 @@
             display: flex;
 			padding: 1rem;
 			width: 80%;
-            
+            margin: 4rem 0;
+
             .flex {
                 margin-left: 3rem;
+            }
+
+            &:last-child {
+                margin-bottom: 2rem;
             }
 		}
 
         .expertise-item:nth-child(2n) { 
             flex-direction: row-reverse;
-            margin: 4rem 0;
 
             .flex {
                 margin-left: 0;

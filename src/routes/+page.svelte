@@ -45,7 +45,7 @@
 
 
 	<div class="expertise">
-		<h2>Expertise</h2>
+		<h2>My Expertise</h2>
         
         <ExpertiseItems />
 	</div>
@@ -101,14 +101,13 @@ h2 {
 }
 
 .expertise {
-    margin-top: 8rem;
+    margin-top: 11rem;
 
     h2 {
         font-size: 1.2rem;
         text-align: center;
         font-weight: bold;
     }
-
 }
 
 
