@@ -1,6 +1,21 @@
 <script lang="ts">
 import { sendData } from './sendData'; 
 
+let spamProtectionInput;
+let spamInputValue;
+let submitButton;
+
+function showHiddenInput() {
+    spamProtectionInput.style.display = 'block'
+}
+
+function checkSpamInputValue(spamInputValue) {
+    if (spamInputValue.target.value === '13' || spamInputValue.target.value === 'thirteen' || spamInputValue.target.value === 'thirten') {
+        console.log('correct!');
+        submitButton.disabled = false;
+    }
+}
+
 function handleSubmit(event) {
     const formData = new FormData(event.target);
 
@@ -12,6 +27,7 @@ function handleSubmit(event) {
     }
 
     sendData(changes);
+
 }
 
 </script>
@@ -79,11 +95,17 @@ function handleSubmit(event) {
                                     cols="30"
                                     rows="8"
                                     placeholder="Drop me a line..."
+                                    on:focus={showHiddenInput}
                                 />
+                            </label>
+
+                            <label bind:this={spamProtectionInput} class="spam-protection">
+                                Spam Protection: What is twelve plus three?
+                                <input on:keyup={checkSpamInputValue} bind:value={spamInputValue} type="text">
                             </label>
                         </div>
 
-                    <button class="btn secondary">Submit</button>
+                    <button bind:this={submitButton} disabled class="btn secondary">Submit</button>
                     </div>
                 </fieldset>
             </form>
@@ -172,6 +194,12 @@ form {
         margin-top: 2rem;
         width: 95%;
         font-size: 0.9rem;
+        opacity: 1;
+
+        &:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
     }
 
     .flex {
@@ -192,6 +220,15 @@ form {
         &-2 {
             margin-top: 1rem;
             width: 95%;
+
+            .spam-protection {
+                display: none;
+                margin-top: 1rem;
+
+                input {
+                    margin-left: 0.5rem;
+                }
+            }
         }
     }
 
