@@ -10,8 +10,7 @@ function showHiddenInput() {
 }
 
 function checkSpamInputValue(spamInputValue) {
-    if (spamInputValue.target.value === '13' || spamInputValue.target.value === 'thirteen' || spamInputValue.target.value === 'thirten') {
-        console.log('correct!');
+    if (spamInputValue.target.value === '15' || spamInputValue.target.value === 'fifteen' || spamInputValue.target.value === 'fiften') {
         submitButton.disabled = false;
     }
 }
