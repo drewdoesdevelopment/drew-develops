@@ -72,6 +72,10 @@ import CallToAction from '../../elements/CallToAction.svelte';
             }
         }
 
+        &-cta {
+            margin-top: 3rem;
+        }
+
         .flex {
             margin-left: 3rem;
         }
