@@ -53,6 +53,7 @@
 			padding: 1rem;
 			width: 80%;
             margin: 4rem 0;
+            max-width: 1400px; // Spreads out the items for larger screens
 
             .flex {
                 margin-left: 3rem;
@@ -60,6 +61,10 @@
 
             &:last-child {
                 margin-bottom: 2rem;
+            }
+
+            p {
+                max-width: 830px;
             }
 		}
 
@@ -73,12 +78,39 @@
         }
 	}
 
+    @media (max-width: $breakpoint-m) {
+        .expertise-item {
+            flex-direction: column !important;
+            align-items: center;
+        }
+    }
+
 	@media (max-width: $breakpoint-m) {
 		.expertise {
 			&-item {
 				width: 100% !important;
 				margin-bottom: 2rem !important;
+
+                img {
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    max-width: 600px !important;
+                }
+
+                p, h3 {
+                    text-align: center;
+                }
+
+                .flex {
+                    margin-left: 0 !important;
+                }
 			}
+
+            .expertise-item:nth-child(2n) {
+                margin-right: 0 !important;
+            }
 
 			&-items {
 				flex-direction: column;
