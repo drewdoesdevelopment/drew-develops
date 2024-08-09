@@ -1,5 +1,5 @@
 <div class="cta">
-        <h3>Let's explore how I can improve your web services</h3>
+        <h3>Let's chat about how I can help you generate more revenue and improve your end-user experience</h3>
         <a href="/connect" class="secondary btn">Setup a Call</a>
 </div>
 
@@ -10,7 +10,7 @@
     text-align: center;
 
     h3 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         font-weight: 500;
     }
 }
