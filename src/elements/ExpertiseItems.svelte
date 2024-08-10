@@ -110,6 +110,10 @@
 
             .expertise-item:nth-child(2n) {
                 margin-right: 0 !important;
+
+                .flex {
+                    margin-right: 0;
+                }
             }
 
 			&-items {
