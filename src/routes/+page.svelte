@@ -104,7 +104,7 @@ h2 {
     margin-top: 11rem;
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: center;
         font-weight: bold;
     }

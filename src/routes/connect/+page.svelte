@@ -394,8 +394,9 @@
 	.lds-ellipsis {
 		display: none;
 		position: relative;
+        top: -25px;
 		width: 80px;
-		height: 80px;
+		height: 30px;
 	}
 	.lds-ellipsis div {
 		position: absolute;
