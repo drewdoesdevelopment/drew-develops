@@ -177,3 +177,9 @@ main {
         padding: 10px 22px !important;
     }
 }
+
+@media(max-width: $breakpoint-m) {
+    main {
+        margin: 0 2rem;
+    }
+}
