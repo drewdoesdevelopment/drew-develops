@@ -30,7 +30,7 @@
 				alt="Drew sitting at a computer writing code"
 				src="/images/hero_svg.svg"
 			/>
-			<h2>
+			<h2 aria-label="I'm a software engineer that creates impactful, performant, and accessible end-user experiences.">
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
             <div class="hero-buttons">
@@ -269,15 +269,22 @@ h2 {
     }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 1080px) {
     .hero h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+        margin-top: 0.8rem;
     }
 }
 
 @media (min-width: 1982px) {
     .hero h2 {
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 2100px) {
+    .hero h1, .hero h2 {
+        margin-bottom: 1rem;
     }
 }
 
