@@ -242,8 +242,9 @@
 		}
 
 		legend {
-			padding-left: 0;
-			width: 90%;
+            width: 0;
+            height: 0;
+            overflow: hidden;
 		}
 
 		button {
