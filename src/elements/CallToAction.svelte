@@ -1,6 +1,6 @@
 <div class="cta">
-        <h3>Let's chat about how I can help you generate more revenue and improve your end-user experience</h3>
-        <a href="/connect" class="secondary btn">Setup a Call</a>
+        <h3>Let's chat about how I can help you generate more revenue and improve your end-user experience.</h3>
+        <a href="/connect" class="secondary btn">Contact Me</a>
 </div>
 
 <style scoped lang="scss">
