@@ -251,7 +251,8 @@
 			border-radius: 4px;
 			margin-top: 2rem;
 			width: 95%;
-			font-size: 0.9rem;
+			font-size: 1rem;
+            padding: 1rem 0;
 			opacity: 1;
 
 			&:disabled {
