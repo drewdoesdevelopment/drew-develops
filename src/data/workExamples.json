@@ -1,11 +1,19 @@
 [
     {
         "name": "Law Office of Kenneth Wake",
-        "longDesc": "Deployed for a local law office utilizing HTML, CSS & Bootstrap to achieve a static landing page while using web APIs for Google Maps and contact form integration, with some use of JS animation libraries",
+        "longDesc": "Deployed for a local law office utilizing HTML, CSS & Bootstrap to achieve a static landing page while using web APIs for Google Maps and contact form integration, with some use of JS animation libraries.",
         "imgSrc": "/images/KW_Display.png",
         "isPublic": false,
         "codeUrl": "",
         "previewUrl": "https://kennethwake.com"
+    },
+    {
+        "name": "Orange Landscaping",
+        "longDesc": "Orange Landscaping is a locally owned landscaping company that needed a fast and efficient way to connect with potential clients. I built a streamlined website designed to get them on an estimate call within one minute. I also created a modern, eye-catching business card featuring a QR code that directs customers straight to the landing page for quick booking.",
+        "imgSrc": "/images/olcPreview.png",
+        "isPublic": false,
+        "codeUrl": "",
+        "previewUrl": "https://orangelandscapingtx.com"
     },
     {
         "name": "TM Buddy",
