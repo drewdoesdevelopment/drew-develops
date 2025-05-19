@@ -4,8 +4,8 @@
 	let spamProtectionInput;
 	let spamInputValue;
 	let submitButton;
-    let submitText;
-    let loadingSpinner;
+	let submitText;
+	let loadingSpinner;
 
 	function showHiddenInput() {
 		spamProtectionInput.style.display = 'block';
@@ -155,14 +155,14 @@
 						</div>
 
 						<button bind:this={submitButton} disabled class="btn secondary">
-                            <div bind:this={submitText} class="submit-text">Submit</div>
-                            <div bind:this={loadingSpinner} class="lds-ellipsis">
-                                    <div />
-                                    <div />
-                                    <div />
-                                    <div />
-                            </div>
-                        </button>
+							<div bind:this={submitText} class="submit-text">Submit</div>
+							<div bind:this={loadingSpinner} class="lds-ellipsis">
+											<div />
+											<div />
+											<div />
+											<div />
+							</div>
+						</button>
 					</div>
 				</fieldset>
 			</form>
