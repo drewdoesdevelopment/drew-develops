@@ -1,14 +1,15 @@
 <script lang="ts">
 import projects from '../../data/workExamples.json';
 import CallToAction from '../../elements/CallToAction.svelte';
+import { scrollReveal } from '$lib/actions/scrollReveal';
 </script>
 
 <main>
-    <h1>Previous Work</h1>
+    <h1 use:scrollReveal={{ animation: 'fade-in', delay: 0 }}>Previous Work</h1>
 
     <div class="examples">
-        {#each projects as project}
-            <div class="example">
+        {#each projects as project, index}
+            <div class="example" use:scrollReveal={{ animation: 'fade-up', delay: index * 100 }}>
                 <div class="example-image">
                     <img src={project.imgSrc} alt="Desktop and Mobile frames showing the currently selected project in preview">
                 </div>

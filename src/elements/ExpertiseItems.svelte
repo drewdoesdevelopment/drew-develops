@@ -1,5 +1,9 @@
+<script lang="ts">
+	import { scrollReveal } from '$lib/actions/scrollReveal';
+</script>
+
 <div class="expertise-items">
-	<div class="expertise-item">
+	<div class="expertise-item" use:scrollReveal={{ animation: 'fade-right', delay: 0 }}>
 		<img alt="Drew sitting at a computer writing code" src="/images/webapps.svg" />
 
 		<div class="flex">
@@ -11,7 +15,7 @@
 		</div>
 	</div>
 
-	<div class="expertise-item">
+	<div class="expertise-item" use:scrollReveal={{ animation: 'fade-left', delay: 150 }}>
 		<img alt="Drew sitting at a computer writing code" src="/images/accessibility.svg" />
 		<div class="flex">
 			<h3>Web Accessibility (A11Y)</h3>
@@ -23,7 +27,7 @@
 		</div>
 	</div>
 
-	<div class="expertise-item">
+	<div class="expertise-item" use:scrollReveal={{ animation: 'fade-right', delay: 300 }}>
 		<img alt="Drew sitting at a computer writing code" src="/images/ai.svg" />
 		<div class="flex">
 			<h3>Automation/AI Integrations</h3>

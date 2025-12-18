@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
     import ExpertiseItems from '../elements/ExpertiseItems.svelte';
 	import CallToAction from '../elements/CallToAction.svelte';
+	import { scrollReveal } from '$lib/actions/scrollReveal';
 
 	let typeWriterElement: HTMLElement;
     
@@ -24,29 +25,39 @@
 <main>
 	<div class="hero">
 		<div class="flex-container hero-text">
-			<h1>Hey, I'm Drew</h1>
+			<h1 class="scroll-reveal fade-up" use:scrollReveal={{ animation: 'fade-up', delay: 0 }}>Hey, I'm Drew</h1>
 			<img
-				class="mobile-image"
+				class="mobile-image scroll-reveal fade-up"
 				alt="Drew sitting at a computer writing code"
 				src="/images/hero_svg.svg"
+				use:scrollReveal={{ animation: 'fade-up', delay: 200 }}
 			/>
-			<h2 aria-label="I'm a software engineer that creates impactful, performant, and accessible end-user experiences.">
+			<h2
+				class="scroll-reveal fade-up"
+				aria-label="I'm a software engineer that creates impactful, performant, and accessible end-user experiences."
+				use:scrollReveal={{ animation: 'fade-up', delay: 100 }}
+			>
 				I'm a software engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
-            <div class="hero-buttons">
+            <div class="hero-buttons scroll-reveal fade-up" use:scrollReveal={{ animation: 'fade-up', delay: 200 }}>
                 <a href="/previous-work" class="primary btn">See My Work</a>
                 <a href="/connect" class="secondary btn">Let's Chat</a>
             </div>
 		</div>
 		<div class="hero-image flex-container">
-			<img alt="A man sitting at a computer writing code" src="/images/hero_svg.svg" />
+			<img
+				class="scroll-reveal fade-left"
+				alt="A man sitting at a computer writing code"
+				src="/images/hero_svg.svg"
+				use:scrollReveal={{ animation: 'fade-left', delay: 300 }}
+			/>
 		</div>
 	</div>
 
 
 	<div class="expertise">
-		<h2>My Expertise</h2>
-        
+		<h2 use:scrollReveal={{ animation: 'fade-in', delay: 0 }}>My Expertise</h2>
+
         <ExpertiseItems />
 	</div>
 

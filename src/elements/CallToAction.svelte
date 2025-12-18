@@ -1,6 +1,10 @@
+<script lang="ts">
+	import { scrollReveal } from '$lib/actions/scrollReveal';
+</script>
+
 <div class="cta">
-        <h3>Let's chat about how I can help you generate more revenue and improve your end-user experience.</h3>
-        <a href="/connect" class="secondary btn">Contact Me</a>
+        <h3 use:scrollReveal={{ animation: 'fade-up', delay: 0 }}>Let's chat about how I can help you generate more revenue and improve your end-user experience.</h3>
+        <a href="/connect" class="secondary btn" use:scrollReveal={{ animation: 'fade-up', delay: 100 }}>Contact Me</a>
 </div>
 
 <style scoped lang="scss">
