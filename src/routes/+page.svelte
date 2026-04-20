@@ -147,6 +147,7 @@ h2 {
         margin-top: 4rem !important;
         margin-bottom: 4rem;
         font-size: 1.2rem !important;
+        min-height: 5em;
     }
 
     .expertise {
@@ -184,7 +185,7 @@ h2 {
         h2 {
             margin-top: 4rem;
             font-size: 1rem;
-            min-height: 60px;
+            min-height: 4em;
         }
 
 
@@ -213,7 +214,7 @@ h2 {
         }
 
         h2 {
-            min-height: 60px;
+            min-height: 3em;
         }
 
         &-text {
