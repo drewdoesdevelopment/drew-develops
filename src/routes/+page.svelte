@@ -118,6 +118,7 @@ h2 {
         font-size: 1.8rem;
         text-align: center;
         font-weight: bold;
+        margin-bottom: 0;
     }
 }
 
