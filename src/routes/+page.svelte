@@ -10,11 +10,11 @@
 	onMount(() => {
 		new Typed(typeWriterElement, {
 			strings: [
-				'SEO-focused, top resulting websites.',
-				'WCAG (a11y) compliant software.',
-				'impactful end-user experiences.'
+				'enterprise-grade, accessible web applications.',
+				'WCAG-compliant software for Fortune 100 clients.',
+				'robust, production-ready solutions using modern tooling.'
 			],
-			typeSpeed: 60,
+			typeSpeed: 30,
 			backSpeed: 30,
             backDelay: 3000,
 			loop: true
@@ -25,7 +25,7 @@
 <main>
 	<div class="hero">
 		<div class="flex-container hero-text">
-			<h1 class="scroll-reveal fade-up" use:scrollReveal={{ animation: 'fade-up', delay: 0 }}>Hey, I'm Drew</h1>
+			<h1 class="scroll-reveal fade-up" use:scrollReveal={{ animation: 'fade-up', delay: 0 }}>Howdy, I'm Drew</h1>
 			<img
 				class="mobile-image scroll-reveal fade-up"
 				alt="Drew sitting at a computer writing code"
@@ -34,10 +34,10 @@
 			/>
 			<h2
 				class="scroll-reveal fade-up"
-				aria-label="I'm a software engineer that creates impactful, performant, and accessible end-user experiences."
+				aria-label="I'm a Front-End Engineer that creates scalable front-end architecture with React & TypeScript."
 				use:scrollReveal={{ animation: 'fade-up', delay: 100 }}
 			>
-				I'm a software engineer that creates <span bind:this={typeWriterElement} />
+				I'm a Software Engineer that creates <span bind:this={typeWriterElement} />
 			</h2>
             <div class="hero-buttons scroll-reveal fade-up" use:scrollReveal={{ animation: 'fade-up', delay: 200 }}>
                 <a href="/previous-work" class="primary btn">See My Work</a>

@@ -9,8 +9,7 @@
 		<div class="flex">
 			<h3>Web Development</h3>
 			<p>
-				Whether you're looking for styling updates to your app or site, updates to an existing API,
-				or a fully custom webapp, I've got you covered!
+				I architect and deliver scalable, high-performance web applications — from styling updates and API integrations to full custom builds.
 			</p>
 		</div>
 	</div>
@@ -20,9 +19,7 @@
 		<div class="flex">
 			<h3>Web Accessibility (A11Y)</h3>
 			<p>
-				Having an accessibile application for your users has become a UX and legal necessity, and
-				often a deciding factor between competing software. I offer professional auditing,
-				development, and consultation.
+				As a lead accessibility SME for flagship SaaS platforms, I drive WCAG 2.1/2.2 compliance through professional auditing, ARIA implementation, and screen reader testing — helping enterprise clients retain and grow their user base.
 			</p>
 		</div>
 	</div>
@@ -32,8 +29,7 @@
 		<div class="flex">
 			<h3>Automation/AI Integrations</h3>
 			<p>
-				I offer development for scripts and setup for third-party integration/automation services
-				(SharePoint, etc) that can save you time and provide powerful insights.
+				I build AI-powered platforms and automation integrations that streamline workflows, enhance decision transparency, and deliver measurable efficiency gains for your team.
 			</p>
 		</div>
 	</div>

@@ -3,7 +3,7 @@
 </script>
 
 <div class="cta">
-        <h3 use:scrollReveal={{ animation: 'fade-up', delay: 0 }}>Let's chat about how I can help you generate more revenue and improve your end-user experience.</h3>
+        <h3 use:scrollReveal={{ animation: 'fade-up', delay: 0 }}>Let's talk about how enterprise-level engineering and accessibility expertise can elevate your product.</h3>
         <a href="/connect" class="secondary btn" use:scrollReveal={{ animation: 'fade-up', delay: 100 }}>Contact Me</a>
 </div>
 
