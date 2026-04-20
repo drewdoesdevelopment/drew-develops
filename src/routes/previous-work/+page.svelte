@@ -47,9 +47,6 @@ import { scrollReveal } from '$lib/actions/scrollReveal';
                         <p>{project.longDesc}</p>
                     </div>
                     <div class="example-cta">
-                        {#if project.isPublic !== false}
-                            <a href={project.codeUrl} class="primary btn">View Code</a>
-                        {/if}
                         <a href={project.previewUrl} class="secondary btn">Live Preview</a>
                     </div>
                 </div>
