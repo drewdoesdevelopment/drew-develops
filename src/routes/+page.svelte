@@ -184,7 +184,7 @@ h2 {
         h2 {
             margin-top: 4rem;
             font-size: 1rem;
-            height: 60px;
+            min-height: 60px;
         }
 
 
@@ -213,7 +213,7 @@ h2 {
         }
 
         h2 {
-            height: 60px;
+            min-height: 60px;
         }
 
         &-text {
@@ -288,9 +288,13 @@ h2 {
     }
 }
 
-@media (min-width: 1982px) {
+@media (min-width: 1786px) {
     .hero h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-buttons {
+        padding-top: 0.8rem;
     }
 }
 
