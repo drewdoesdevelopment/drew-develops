@@ -38,6 +38,14 @@
 	}
 </script>
 
+<svelte:head>
+    <title>Connect with Drew Develops</title>
+    <meta name="description" content="Get in touch with Drew Pfeiler (Drew Develops) — software engineer available for freelance, consulting, and accessibility work." />
+    <link rel="canonical" href="https://drewdevelops.com/connect" />
+    <meta property="og:url" content="https://drewdevelops.com/connect" />
+    <meta property="og:title" content="Connect with Drew Develops" />
+</svelte:head>
+
 <main>
 	<h1>Let's Connect</h1>
 

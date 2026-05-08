@@ -4,6 +4,14 @@ import CallToAction from '../../elements/CallToAction.svelte';
 import { scrollReveal } from '$lib/actions/scrollReveal';
 </script>
 
+<svelte:head>
+    <title>Previous Work — Drew Develops</title>
+    <meta name="description" content="Selected projects by Drew Pfeiler (Drew Develops): enterprise accessibility work at MadCap Software plus freelance and personal apps." />
+    <link rel="canonical" href="https://drewdevelops.com/previous-work" />
+    <meta property="og:url" content="https://drewdevelops.com/previous-work" />
+    <meta property="og:title" content="Previous Work — Drew Develops" />
+</svelte:head>
+
 <main>
     <h1 use:scrollReveal={{ animation: 'fade-in', delay: 0 }}>Previous Work</h1>
 

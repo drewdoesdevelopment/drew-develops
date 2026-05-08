@@ -147,6 +147,7 @@
 						href={navLink.href}
 						class="hvr-underline-from-center"
 						class:active={isActiveLink(navLink.href)}
+						on:click={() => mobileNavState = false}
 						>{navLink.label}
 					</a>
 				</li>
