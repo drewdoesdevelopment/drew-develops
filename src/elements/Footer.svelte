@@ -72,7 +72,8 @@
 	@import '../styles/variables.scss';
 
 	footer {
-		margin: 3rem 7rem;
+		margin: 3rem 7rem 0 7rem;
+		padding-bottom: 3rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -110,7 +111,8 @@
 
 	@media (max-width: $breakpoint-xs) {
 		footer {
-			margin: 3rem 0;
+			margin: 3rem 0 0 0;
+			padding-bottom: 3rem;
 		}
 	}
 

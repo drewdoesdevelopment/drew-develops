@@ -196,7 +196,7 @@
 		display: flex;
 		justify-content: space-between;
 		margin: 0 4rem;
-		margin-top: 2rem;
+		padding-top: 2rem;
 		align-items: center;
 
 		a {
@@ -301,7 +301,7 @@
 		nav {
             flex-direction: column;
 			align-items: start;
-            margin-top: 2rem;
+            padding-top: 2rem;
             margin-bottom: 3rem;
 
 			ul {
@@ -357,7 +357,8 @@
 
     @media (min-width: $breakpoint-m) {
         nav {
-            margin: 3rem 7rem 0 7rem;
+            margin: 0 7rem;
+            padding-top: 3rem;
         }
     }
 </style>
