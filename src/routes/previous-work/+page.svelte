@@ -6,7 +6,7 @@ import { scrollReveal } from '$lib/actions/scrollReveal';
 
 <svelte:head>
     <title>Previous Work — Drew Develops</title>
-    <meta name="description" content="Selected projects by Drew Pfeiler (Drew Develops): enterprise accessibility work at MadCap Software plus freelance and personal apps." />
+    <meta name="description" content="Selected projects by Drew P. (Drew Develops): enterprise accessibility work at MadCap Software plus freelance and personal apps." />
     <link rel="canonical" href="https://drewdevelops.com/previous-work" />
     <meta property="og:url" content="https://drewdevelops.com/previous-work" />
     <meta property="og:title" content="Previous Work — Drew Develops" />
