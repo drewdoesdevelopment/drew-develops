@@ -64,7 +64,7 @@
 		</ul>
 	</div>
 	<div class="copyright">
-		<p>© 2025 Drew Develops</p>
+		<p>© 2026 Drew Develops</p>
 	</div>
 </footer>
 
