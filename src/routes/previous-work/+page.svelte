@@ -74,7 +74,7 @@ import { scrollReveal } from '$lib/actions/scrollReveal';
         margin-top: 3rem;
 
         :global(html[data-theme="dark"]) & {
-            background-color: var(--dark-secondary);
+            background-color: #141617;
         }
     }
 
